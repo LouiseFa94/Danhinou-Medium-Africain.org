@@ -79,7 +79,8 @@ display: none;
  .menu-vertical-links li a,
 .menu-vertical-links li a:hover,
 .menu-vertical-button button,
-.menu-vertical-button button:hover{
+.menu-vertical-button button:hover,
+.menu-vertical{
    display:none;
     }
 /*---------RESPONSIVE--------*/
