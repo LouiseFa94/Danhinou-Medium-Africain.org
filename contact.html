@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="stylesheet" href="Css/navbar.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="shortcut icon" href="icons/vodoun-mask.svg" type="image/x-icon">
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-left-section">
+          <img src="icons/vodoun-mask.svg" alt="mask-vodoun">
+          <strong>Danhinou Médium</strong>
+      </div>
+      <div class="navbar-middle-section">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href=" index.html">Faq</a></li>
+      </div>
+      <div class="navbar-right-section">
+        <button id="nav-btn">Découvrir</button>
+      </div>
+  </nav>
+        <!--Contactez nous-->
+    <div id="contact">
+      <div class="titre">
+        <p>Contactez-nous</p>
+      </div>
+          <form action="traitement_formulaire.php" method="post">
+              <div class="user-identity">
+                  <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom" required>
+                  <input type="text" id="prenom" name="prenom" placeholder="Prénoms" required>
+              </div>
+              <input type="email" id="email" name="email" maxlength="30"  placeholder="Email" required>
+      
+              <textarea id="message" name="message" rows="4" 
+              maxlength="150" placeholder="Message" required ></textarea>
+      
+              <input type="submit" value="Envoyer">
+          </form>
+  </body>
+</html>

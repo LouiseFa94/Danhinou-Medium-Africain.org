@@ -1,0 +1,91 @@
+body{
+  background-color: #494949;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+}
+body *{
+  font-family: Calibri;
+  user-select: none;
+  outline: none;
+  font-size: 18px;
+}
+/*Formulaire de contact*/
+#contact{
+  background-color: #518bbb;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  margin-top:7%;
+  border-radius: 8px;
+  padding-inline: 50px;
+  padding-bottom:45px;
+}
+
+.user-identity{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.titre p{
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  font-size:35px;
+  z-index: 1;
+}
+
+form {
+  max-width: 450px;
+}
+input,
+textarea{
+  outline: none;
+  border: none;
+  color: gray;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus{
+  outline-width: 2px;
+  outline-color:#00438a;
+  outline-style: groove;
+  font-size: 15px;
+}
+input[type="text"]{
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+input[type="submit"] {
+  background-color: #003874;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding-block: 10px;
+  padding-inline: 15px;
+  font-size: 15px;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
