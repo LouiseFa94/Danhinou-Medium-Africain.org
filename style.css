@@ -60,6 +60,9 @@ body{
     }
     .header-section para-animate{
       margin-inline:15px;
+      font-size:70px;
+      color:#fdba87;
+      font-weight:bolder;
     }
     .header-section button{
       color:#060607;
