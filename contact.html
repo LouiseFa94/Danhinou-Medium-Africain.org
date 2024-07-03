@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <script   defer src="contact-script.js" ></script>
     <link rel="shortcut icon" href="vodoun-mask.svg" type="image/x-icon">
     <title>Contact</title>
   </head>
@@ -16,14 +17,29 @@
           <strong>Danhinou Médium</strong>
       </div>
       <div class="navbar-middle-section">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="index.html">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href=" index.html">Faq</a></li>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href=" index.html">Faq</a></li>
+        </ul>
+        
       </div>
       <div class="navbar-right-section">
-        <button id="nav-btn">Découvrir</button>
+        <button>Découvrir</button>
+        <div><li class="menu-icon"></li></div>
       </div>
+      <!--Ceci est un menu vertical qui apparait lorsque l'ecran a une largeur inférieure ou égale à 1000px-->
+      <div class="menu-vertical-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Faq</a></li>
+        <div class="menu-vertical-button">
+          <button>Découvrir</button>
+        </div>
+   </div>
+   <!--Fin de code html pour le menu vertical-->
   </nav>
         <!--Contactez nous-->
     <div id="contact">
@@ -37,10 +53,26 @@
               </div>
               <input type="email" id="email" name="email" maxlength="30"  placeholder="Email" required>
       
-              <textarea id="message" name="message" rows="4" 
-              maxlength="150" placeholder="Message" required ></textarea>
-      
-              <input type="submit" value="Envoyer">
+              <textarea id="message1" name="message1" rows="4" 
+              maxlength="150" placeholder="Message" required  style="height: 134px; resize:none;"></textarea>
+              <div class="users-consentement">
+                <input type="checkbox" id="checkbox1">
+                <p class="consent-text">J'accepte de recevoir des notifications provenants de DanhinouMedium.</p>
+              </div>
+              <input type="submit" value="Envoyer" id="submit1">
+              <!--Cette partie concerne que les codes d'une largeur d'écran portable-->
+              <div class="user-identity-p">
+                <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom :" required>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénoms :" required>
+                <input type="email" id="email" name="email" maxlength="30"  placeholder="Email :" required>
+                <textarea id="message2" name="message2" rows="4" 
+                maxlength="150" placeholder="Laissez-nous votre message..." required style="height: 134px; resize:none;"></textarea>
+              </div>
+              <div class="users-consentement">
+                <input type="checkbox" id="checkbox2">
+                <p class="consent-text2">J'accepte de recevoir des notifications provenants de DanhinouMedium.</p>
+              </div>
+            <input type="submit" value="Envoyer" id="submit2">
           </form>
   </body>
 </html>

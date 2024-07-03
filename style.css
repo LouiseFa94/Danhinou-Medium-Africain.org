@@ -1,3 +1,4 @@
+
 html{
   background-color:#191919;
   height:5000px;
@@ -12,6 +13,7 @@ html *{
   margin:0;
   padding:0;
   font-weight:300;
+  -webkit-user-select: none;
   user-select: none;
 }
 img{
@@ -23,7 +25,13 @@ body{
   align-items:center;
   justify-content:center;
 }
-/*video section styles*/
+@media (max-width:243px) {
+  *{
+    display: none;
+  }
+}
+@media (min-width:430.1px) {
+  /*video section styles*/
 .header-section {
   display:flex;
   flex-direction:column;
@@ -330,12 +338,14 @@ body{
   height:480px;
   z-index: 0;
 }
-.image-field li span {
+
+.image-field li  {
   width:100%;
   height:480px;
   object-fit: cover;
   backface-visibility: hidden;
   opacity:0;
+  list-style: none;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -457,7 +467,6 @@ body{
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth; 
-  scrollbar-width:0;
 }
 .carousel::-webkit-scrollbar{
   display:none;
@@ -733,5 +742,1456 @@ margin-block:40px;
     font-weight: 400;
     color : #ffffff ;
   }
+}
+/*-----341px----*/
+@media (max-width:341px) {
+  html{
+    background-color:#191919;
+    scroll-behavior:smooth;
+    color:#909090;
+    font-family:Calibri;
+    font-size:14px;
+  }
+  /*video section styles*/
+.header-section {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  gap:8px;
+  height:320px;
+  width:100%;
+  color:#e7e7e7;
+  margin-top: -100px;
+} 
+    .header-section video{
+      height:100%;
+      width:110%;
+      opacity:0.5;
+      position:absolute;
+      z-index:-100;
+    }
+    .init-description{
+      margin-inline:4%;
+      text-align: center;
+      font-size:12px;
+      font-family:roboto;
+      text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
+      color:#ffffff;
+      z-index:-99;
+    }
+    .header-section .para-animate{
+      margin-inline:20px;
+      margin-top: 20%;
+      color:#fdba87;
+      font-size:17px;
+      font-weight:bolder;
+    }
+    .header-section button{
+      color:#060607;
+      background-color:#e7e7e7;
+      border-radius:15px;
+      border:2px solid #e7e7e7;
+      width:100px;
+      padding:5px;
+      font-size:10px;
+      cursor:pointer;
+      z-index: 1;
+    }
+    .header-section button:hover{
+      scale:0.85;
+      background-color:#f3f3f3;
+      color: #363636;
+      transition: all 0.55s;
+    }
+    .header-section button:active{
+      scale:1.2;
+      transition:scale 0.55s;
+    }
+    .fix-collapse{
+      padding-inline:10px;
+    } 
+      .section1{
+        background-color:#d4d4d4;
+        color:#060607;
+        width:244px;
+        font-weight:400;
+        padding:10px;
+        margin-top:-84px;
+        margin-inline:2px;
+      }
+      .section1 h1{
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:5px;
+      }
+      .section1 p{
+        margin-bottom:10px;
+        font-size:14px;
+      }
+      /*La section2 est relative aux services rendus*/
+      .section2{
+        background-color:#191919;
+        color:#b1b1b1;
+        width:244px;
+        display:flex;
+        flex-direction:column;
+        font-weight:200;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+  /*Info de Nos services*/
+      .beginner-client{
+        font-family:Lucida Grande;
+        width:244px;
+        padding-block:15px;
+      }
+      .beginner-client h1{
+        text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        font-size:30px;
+        font-weight:700;
+      }
+      .beginner-client p{
+        font-size:14px;
+        padding-top:10px;
+        margin-top:7.5px;
+        color: #9e9e9e;
+      }
+  /*Section des services*/
+      .services-opt{
+        width:244px;
+        display:flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .services{
+        background-color:#454545;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:8px;
+        display:grid;
+        grid-template-rows:30px 90px;
+        row-gap: 5px;
+        cursor: pointer;
+      }
+      .services:hover{
+        scale:1.05;
+        z-index:2;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
+        background-color:#585858;
+        color:#e7e7e7;
+        transition: all 0.5s;
+      }
+      .services-to-update{
+        background-color:#ffffff;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:12px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        gap:6px;
+        height:125px;
+        width:100% ;
+      }
+      .services-to-update img{
+        height:50px;
+        width:50px;
+        cursor: pointer;
+      }
+      .services-to-update:hover{
+        scale:1.05;
+        z-index:2;
+        transition: all 0.55s;
+      }
+      .services p{
+        font-size:18px;
+        font-family:Calibri;
+      }
+      h1{
+        font-size:15px;
+        font-family:Calibri;
+      }
+    
+      h3{
+        font-size:20px;
+        padding-block:10px;
+      }
+      /*La section3 est codé pour gérer les FAQ*/  
+      .section3{
+        background-color: #212121;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding-bottom:15px;
+        width:244px;
+      }
+      .header1{
+        font-family:Calibri;
+        font-size:24px;
+        margin-block:15px;
+        color:rgb(255, 255, 255);
+      }
+      .subtitle-services{
+        display:flex;
+        color: #ffffff;
+        font-size:28px;
+        margin-bottom:12px;
+      }
+      .faq{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color:#444444;
+        width:460px;
+        margin-bottom:35px;
+        padding:15px;
+        height:230px;
+        border-radius:15px;
+        cursor: pointer;
+      }
+      .faq:hover{
+        background-color: #d32a00a9;
+        scale:1.1;
+        transition:all 0.55s;
+      }
+  
+      .faq p+p{
+        font-size:18px;
+        font-family:Lucida Grande;
+        margin-left:14px;
+        color:rgb(216, 216, 216);
+      }
+  /*Codage de la section4 commence juste après*/
+  .section4{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .section4 p{
+    font-size:50px;
+    margin-inline:50px;
+    margin-block:50px;
+    color: rgb(255, 255, 255);
+  }
+  /*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
+  .section5{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(196, 196, 196);
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius:2px;
+    padding-inline:20px;
+    padding-block:70px;
+    margin-inline:15%;
+    margin-bottom:25px;
+  }
+  
+  .section5 .p1{
+    font-size:65px;
+    color:black;
+    margin-inline:5%;
+    text-align:center;
+    font-weight:500;
+  }
+  .section5 .p2{
+    color:black;
+    margin-top:35px;
+    font-size:18px;
+    font-weight:200;
+    font-family:Roboto;
+  }
+  .section5 button{
+    background-color:rgb(0, 0, 0);
+    margin-top:35px;
+    padding:18px;
+    cursor: pointer;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:200;
+    color:#fff;
+    border:none;
+  }
+  .section5 button:hover{
+    background-color:rgb(23, 24, 24);
+    scale:1.1;
+    transition: scale 0.35s;
+    font-weight:bold;
+  }
+  .section5 button:active{
+    background-color:rgb(16, 173, 212);
+    scale: 0.9;
+    transition: scale 0.35s;
+  }
+  /*La section6 pour l'image de background définissant les traditions du vodoun */
+  .section6{
+    background-color:#315a28;
+    color:#ffffff;
+    width:45%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 165px;
+    margin-top: 15px;
+  }
+    .section6 .info{
+    font-family:Calibri;
+    font-size:14px;
+    width:50px;
+    padding:8px;
+  }
+  /**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
+   .image-field{
+    padding:5px;
+    opacity:0.84;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .image-field,
+  .image-field::after{
+    width:200px;
+    height:200px;
+    z-index: 0;
+  }
+  
+  .image-field li  {
+    width:95%;
+    height:95%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    opacity:0;
+    list-style: none;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 20s linear infinite 0s;
+  }
+  .image-field li:nth-child(1) span{
+    animation-delay: 0s;
+  }
+  .image-field li:nth-child(2) span{
+    animation-delay: 5s;
+  }
+  .image-field li:nth-child(3) span{
+    animation-delay: 10s;
+  }
+  .image-field li:nth-child(4) span{
+    animation-delay: 15s;
+  }
+  .image-field li:nth-child(5) span{
+    animation-delay: 20s;
+  }
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    8%{
+      opacity: 1;
+    }
+    17%{
+      opacity: 0.75;
+    }
+    25%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  .section6 .image-field img{
+    height:200px;
+    width:200px;
+    cursor:pointer;
+  }
+  /*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
+  .section-master p{
+    text-align:center;
+  }
+  .master-presta-info{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+  }
+  .picture-master{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:25px;
+    height:46px;
+    color:#ffffff;
+  }
+  
+  .picture-master h2,
+  .picture-master p{
+    margin-top:12px;
+  }
+  
+  .picture-master img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:1px;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Scrollable image*/
+  .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width:132.8px;
+    width:100%;
+    position:relative;
+    padding-left:7px;
+    margin-bottom: 25px;
+    
+  }
+  .wrapper button{
+    border:none;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color:rgba(39, 39, 39, 0.945);
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
+               0px -1px 4px rgba(77, 77, 77, 0.3);
+    z-index: 1;
+  }
+  .wrapper img{
+    width:100%;
+    height:100%;
+    
+  }
+  .wrapper #btn1{
+    left:22px; 
+  }
+  .wrapper #btn2{
+    right:22px;
+  }
+  .wrapper .carousel{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+  }
+  .carousel::-webkit-scrollbar{
+    display:none;
+  }
+  .carousel .no-transition{
+    scroll-behavior:auto;
+  }
+  .dragging {
+    cursor:grab;
+    scroll-snap-type:none;
+    scroll-behavior: auto;
+  }
+  .carousel .card{
+    scroll-snap-align:start;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .card .img{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+  }
+  .card .img img {
+    width:32px;
+    height:36px;
+    object-fit:cover;
+    border-radius:5px;
+  }
+  
+  /*je commence par gérer le responsive design grâce aux medias querries*/
+  @media screen and (max-width: 900px) {
+    .card .img img{
+      width:25px;
+      height:36px;
+      border-radius:20px;
+      transition: all 0.55s;
+    }  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card .img img{
+      width:15px;
+      height:26px;
+      border-radius:15px;
+      transition:all 0.55s;
+    }  
+  }
+  
+  /*C'est du code pour controler l"affichage des textes*/
+  
+  /*@keyframes descriptionAnimate {
+    from {
+        transform: translateX(-1100px);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+  .para-animate {
+    animation-name: descriptionAnimate;
+    animation-duration: 3s;
+    font-weight: 100;
+  }
+  
+  span {
+    opacity:0;
+    transition: all .5s ease;
+  }
+  
+  span.fade {
+    opacity: 1;
+  }
+  */
+  
+  /*Chroniques section comme Master section*/
+  .section-chroniques {
+    color:#ffffff;
+    font-size:20px;
+  }
+  .title p{
+    margin-block:25px;
+    text-align:center;
+    font-size:40px;
+    font-weight:300;
+    color: #fdba87;
+  }
+  
+  .chroniques-layout{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    padding-bottom:40px;
+  }
+  
+  .chroniques-visual{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+  }
+  .picture-chroniques{
+    width:35px;
+    height:32px;
+  }
+  .chroniques-description{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    width:35px;
+    line-height:1.3;
+  }
+    .chroniques-description span , .chroniques-description p{
+      color:rgb(133, 133, 133);
+      font-weight:200;
+      margin-block:0;
+      text-align: left;
+    }
+    .chroniques-description h2{
+      font-weight:bolder;
+      font-size:25px;
+      margin-block:0;
+    }
+  
+  .picture-chroniques img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Les témoignages*/
+  .testimony{
+    background-color:#191919;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+  }
+  .subtitle p{
+  color: rgba(255, 255, 255, 0.945);
+  font-size:35px;
+  margin-block:40px;
+  }
+  .testimonies-visual{
+    display:grid;
+    grid-template-columns: 46px 46px;
+    column-gap: 10px;
+    grid-template-rows:21px 21px;
+    row-gap: 20px;
+  }
+  .user-testimony{
+    background-color: #ffffff;
+    border-radius: 4px;
+    color:black;
+    font-size: 16px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    padding:20px;
+  }
+  .user-picture img{
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    align-items: center;
+  }
+  .user-about{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin-bottom: 6px;
+  }
+  .user-about button{
+    margin-left:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-block:5px;
+    padding-inline: 10px;
+    margin-bottom: 6px;
+  }
+  .user-about button img{
+    width: 15px;
+    height: 15px;
+  }
+  .user-name{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:left;
+    line-height: 1;
+    margin-left: 10px;
+    margin-bottom: 3px;
+  }
+  .user-name .name{
+    font-weight: 700;
+  }
+  .user-name .surname{
+    margin-right:auto;
+  }
+  .user-name .surname ,
+  .publish-date{
+    color: rgb(156, 156, 156);
+    font-size: 14.4px;
+    font-weight: 400;
+  }
+  .user-publish p{
+    font-weight: 400;
+  }
+  .user-publish p span{
+    color: rgb(2, 110, 218);
+    font-weight: 500;
+  }
+  .interactivity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    margin-top: 5px;
+  }
+  .interactivity div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .interactivity img{
+    width:15px ;
+    height:15px ;
+  }
+  .interactivity span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #6e6e6e;
+    margin-inline:2px ;
+    margin-bottom: 2px;
+  }
+  
+  /*Statistiques du Maître Spirituel*/
+  .stats-ctn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 40px;
+  }
+    .stat{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+    .stat span:first-child {
+      color: rgb(172, 0, 252);
+      font-size: 55px;
+      font-weight: 700;
+    }
+    .stat span:last-child {
+      font-size: 25px;
+      font-weight: 400;
+      color : #ffffff ;
+    }
+  }
 
+
+/*------Pour des écrans smartphone--soit--430px---au---plus-----------*/
+@media (min-width:342px) and (max-width:430px) {
+  html{
+    background-color:#191919;
+    padding-top:6%;
+    scroll-behavior:smooth;
+    color:#909090;
+    font-family:Calibri;
+    font-size:15px;
+  }
+  /*video section styles*/
+.header-section {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  gap:15px;
+  height:300px;
+  width:100%;
+  color:#e7e7e7;
+} 
+    .header-section video{
+      height:100%;
+      width:120%;
+      opacity:0.5;
+      position:absolute;
+      z-index:-100;
+    }
+    .init-description{
+      margin-left:4%;
+      font-size:15px;
+      font-family:roboto;
+      text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
+      color:#ffffff;
+      z-index:-99;
+    }
+    .header-section .para-animate{
+      margin-inline:20px;
+      color:#fdba87;
+      font-size:25px;
+      font-weight:bolder;
+    }
+    .header-section button{
+      color:#060607;
+      background-color:#e7e7e7;
+      border-radius:15px;
+      border:2px solid #e7e7e7;
+      width:100px;
+      padding:7.5px;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .header-section button:hover{
+      scale:0.85;
+      background-color:#f3f3f3;
+      color: #363636;
+      transition: all 0.55s;
+    }
+    .header-section button:active{
+      scale:1.2;
+      transition:scale 0.55s;
+    }
+  /*Ici la section1 est liée aux textes de "Notre Histoire...*/
+  .fix-collapse{
+    padding-inline:10px;
+  } 
+    .section1{
+      background-color:#d4d4d4;
+      color:#060607;
+      width:86%;
+      font-weight:400;
+      padding:50px;
+      margin-top:50px;
+      margin-inline:2.5%;
+    }
+    .section1 h1{
+      font-size:57px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+    .section1 p{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+    /*La section2 est relative aux services rendus*/
+    .section2{
+      background-color:#191919;
+      color:#b1b1b1;
+      width:100%;
+      display:flex;
+      flex-direction:row;
+      font-weight:200;
+      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+/*Info de Nos services*/
+    .beginner-client{
+      font-family:Lucida Grande;
+      width:50%;
+      padding-block:45px;
+      padding-inline:10px;
+      margin-right:10px;
+    }
+    .beginner-client h1{
+      text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      font-size:85px;
+      font-weight:700;
+    }
+    .beginner-client p{
+      font-size:22px;
+      padding-top:10px;
+      margin-top:15px;
+      color: #9e9e9e;
+    }
+/*Section des services*/
+    .services-opt{
+      width:50%;
+      display:grid;
+      grid-template-columns:250px 250px 250px;
+      column-gap:35px;
+      grid-template-rows:280px 280px ;
+      row-gap:35px;
+      padding:45px;
+    }
+    .services{
+      background-color:#454545;
+      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      border-radius:5px;
+      padding:12px;
+      display:grid;
+      grid-template-rows:50px 136px;
+      cursor: pointer;
+    }
+    .services:hover{
+      scale:1.2;
+      z-index:2;
+      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
+      background-color:#585858;
+      color:#e7e7e7;
+      transition: all 0.5s;
+    }
+    .services-to-update{
+      background-color:#ffffff;
+      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      border-radius:5px;
+      padding:12px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      cursor: pointer;
+      gap:60px;
+      height:255px;
+    }
+    .services-to-update img{
+      height:80px;
+      width:80px;
+      cursor: pointer;
+    }
+    .services-to-update:hover{
+      scale:1.2;
+      z-index:2;
+      transition: all 0.55s;
+    }
+    .services p{
+      font-size:22px;
+      font-family:Calibri;
+    }
+    h1{
+      font-size:80px;
+      font-family:Calibri;
+    }
+  
+    h3{
+      font-size:30px;
+      padding-block:10px;
+    }
+    /*La section3 est codé pour gérer les FAQ*/  
+    .section3{
+      background-color: #212121;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding-bottom:25px;
+      width:100%;
+    }
+    .header1{
+      font-family:Calibri;
+      font-size:70px;
+      margin-block:30px;
+      color:rgb(255, 255, 255);
+    }
+    .subtitle-services{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: #ffffff;
+      font-size:28px;
+      margin-bottom:12px;
+    }
+    .faq{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      background-color:#444444;
+      width:460px;
+      margin-bottom:35px;
+      padding:15px;
+      height:230px;
+      border-radius:15px;
+      cursor: pointer;
+    }
+    .faq:hover{
+      background-color: #d32a00a9;
+      scale:1.1;
+      transition:all 0.55s;
+    }
+
+    .faq p+p{
+      font-size:18px;
+      font-family:Lucida Grande;
+      margin-left:14px;
+      color:rgb(216, 216, 216);
+    }
+/*Codage de la section4 commence juste après*/
+.section4{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.section4 p{
+  font-size:50px;
+  margin-inline:50px;
+  margin-block:50px;
+  color: rgb(255, 255, 255);
+}
+/*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
+.section5{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  background-color:rgb(196, 196, 196);
+  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius:2px;
+  padding-inline:20px;
+  padding-block:70px;
+  margin-inline:15%;
+  margin-bottom:25px;
+}
+
+.section5 .p1{
+  font-size:65px;
+  color:black;
+  margin-inline:5%;
+  text-align:center;
+  font-weight:500;
+}
+.section5 .p2{
+  color:black;
+  margin-top:35px;
+  font-size:18px;
+  font-weight:200;
+  font-family:Roboto;
+}
+.section5 button{
+  background-color:rgb(0, 0, 0);
+  margin-top:35px;
+  padding:18px;
+  cursor: pointer;
+  border-radius:30px;
+  font-size:18px;
+  font-weight:200;
+  color:#fff;
+  border:none;
+}
+.section5 button:hover{
+  background-color:rgb(23, 24, 24);
+  scale:1.1;
+  transition: scale 0.35s;
+  font-weight:bold;
+}
+.section5 button:active{
+  background-color:rgb(16, 173, 212);
+  scale: 0.9;
+  transition: scale 0.35s;
+}
+/*La section6 pour l'image de background définissant les traditions du vodoun */
+.section6{
+  background-color:#242424;
+  color:#ffffff;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+  .section6 .info{
+  font-family:Calibri;
+  font-size:22px;
+  width:30%;
+  padding:45px 22.5px;
+}
+/**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
+ .image-field{
+  padding:30px;
+  opacity:0.84;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.image-field,
+.image-field::after{
+  width:780px;
+  height:480px;
+  z-index: 0;
+}
+
+.image-field li  {
+  width:100%;
+  height:480px;
+  object-fit: cover;
+  backface-visibility: hidden;
+  opacity:0;
+  list-style: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: animate 20s linear infinite 0s;
+}
+.image-field li:nth-child(1) span{
+  animation-delay: 0s;
+}
+.image-field li:nth-child(2) span{
+  animation-delay: 5s;
+}
+.image-field li:nth-child(3) span{
+  animation-delay: 10s;
+}
+.image-field li:nth-child(4) span{
+  animation-delay: 15s;
+}
+.image-field li:nth-child(5) span{
+  animation-delay: 20s;
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  8%{
+    opacity: 1;
+  }
+  17%{
+    opacity: 0.75;
+  }
+  25%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.section6 .image-field img{
+  height:100%;
+  width:100%;
+  cursor:pointer;
+}
+/*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
+.section-master p{
+  text-align:center;
+}
+.master-presta-info{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:45px;
+}
+.picture-master{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:250px;
+  height:460px;
+  color:#ffffff;
+}
+
+.picture-master h2,
+.picture-master p{
+  margin-top:12px;
+}
+
+.picture-master img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:1px;
+  cursor: pointer;
+  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+/*Scrollable image*/
+.wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  max-width:1328px;
+  width:100%;
+  position:relative;
+  padding-left:7px;
+  margin-bottom: 25px;
+  
+}
+.wrapper button{
+  border:none;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background-color:rgba(39, 39, 39, 0.945);
+  cursor:pointer;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
+             0px -1px 4px rgba(77, 77, 77, 0.3);
+  z-index: 1;
+}
+.wrapper img{
+  width:100%;
+  height:100%;
+  
+}
+.wrapper #btn1{
+  left:22px; 
+}
+.wrapper #btn2{
+  right:22px;
+}
+.wrapper .carousel{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
+}
+.carousel::-webkit-scrollbar{
+  display:none;
+}
+.carousel .no-transition{
+  scroll-behavior:auto;
+}
+.dragging {
+  cursor:grab;
+  scroll-snap-type:none;
+  scroll-behavior: auto;
+}
+.carousel .card{
+  scroll-snap-align:start;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.card .img{
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.card .img img {
+  width:320px;
+  height:360px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+/*je commence par gérer le responsive design grâce aux medias querries*/
+@media screen and (max-width: 900px) {
+  .card .img img{
+    width:250px;
+    height:360px;
+    border-radius:20px;
+    transition: all 0.55s;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .card .img img{
+    width:150px;
+    height:260px;
+    border-radius:15px;
+    transition:all 0.55s;
+  }  
+}
+
+/*C'est du code pour controler l"affichage des textes*/
+
+/*@keyframes descriptionAnimate {
+  from {
+      transform: translateX(-1100px);
+  }
+
+  to {
+      transform: translateX(0);
+  }
+}
+
+.para-animate {
+  animation-name: descriptionAnimate;
+  animation-duration: 3s;
+  font-weight: 100;
+}
+
+span {
+  opacity:0;
+  transition: all .5s ease;
+}
+
+span.fade {
+  opacity: 1;
+}
+*/
+
+/*Chroniques section comme Master section*/
+.section-chroniques {
+  color:#ffffff;
+  font-size:20px;
+}
+.title p{
+  margin-block:25px;
+  text-align:center;
+  font-size:40px;
+  font-weight:300;
+  color: #fdba87;
+}
+
+.chroniques-layout{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-evenly;
+  padding-bottom:40px;
+}
+
+.chroniques-visual{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+.picture-chroniques{
+  width:350px;
+  height:320px;
+}
+.chroniques-description{
+  display:flex;
+  flex-direction:column;
+  justify-content:left;
+  width:350px;
+  line-height:1.3;
+}
+  .chroniques-description span , .chroniques-description p{
+    color:rgb(133, 133, 133);
+    font-weight:200;
+    margin-block:0;
+    text-align: left;
+  }
+  .chroniques-description h2{
+    font-weight:bolder;
+    font-size:25px;
+    margin-block:0;
+  }
+
+.picture-chroniques img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  cursor: pointer;
+  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+/*Les témoignages*/
+.testimony{
+  background-color:#191919;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  padding-bottom: 20px;
+}
+.subtitle p{
+color: rgba(255, 255, 255, 0.945);
+font-size:35px;
+margin-block:40px;
+}
+.testimonies-visual{
+  display:grid;
+  grid-template-columns: 460px 460px;
+  column-gap: 100px;
+  grid-template-rows:210px 210px;
+  row-gap: 20px;
+}
+.user-testimony{
+  background-color: #ffffff;
+  border-radius: 4px;
+  color:black;
+  font-size: 16px;
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  padding:20px;
+}
+.user-picture img{
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  align-items: center;
+}
+.user-about{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-bottom: 6px;
+}
+.user-about button{
+  margin-left:auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-block:5px;
+  padding-inline: 10px;
+  margin-bottom: 6px;
+}
+.user-about button img{
+  width: 15px;
+  height: 15px;
+}
+.user-name{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:left;
+  line-height: 1;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.user-name .name{
+  font-weight: 700;
+}
+.user-name .surname{
+  margin-right:auto;
+}
+.user-name .surname ,
+.publish-date{
+  color: rgb(156, 156, 156);
+  font-size: 14.4px;
+  font-weight: 400;
+}
+.user-publish p{
+  font-weight: 400;
+}
+.user-publish p span{
+  color: rgb(2, 110, 218);
+  font-weight: 500;
+}
+.interactivity{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  margin-top: 5px;
+}
+.interactivity div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.interactivity img{
+  width:15px ;
+  height:15px ;
+}
+.interactivity span{
+  font-size: 14px;
+  font-weight: bold;
+  color: #6e6e6e;
+  margin-inline:2px ;
+  margin-bottom: 2px;
+}
+
+/*Statistiques du Maître Spirituel*/
+.stats-ctn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  margin-top: 40px;
+}
+  .stat{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stat span:first-child {
+    color: rgb(172, 0, 252);
+    font-size: 55px;
+    font-weight: 700;
+  }
+  .stat span:last-child {
+    font-size: 25px;
+    font-weight: 400;
+    color : #ffffff ;
+  }
+}
 

@@ -1,3 +1,18 @@
+:root {
+  --background-color1-general:  linear-gradient(30deg, rgb(68, 151, 172)  0% , rgb(108, 192, 212) 35%, rgb(46, 101, 156) 140%);
+  --background-blue:rgb(68, 151, 172);
+  --background-dark-blue:#15538d;
+  --background-white-general:#f1f1f1;
+  --color-gold:gold;
+  --background-white-dark-general:linear-gradient(7deg, #949494  0% , #5c5c5c 35%, rgb(255, 255, 255) 140%);
+  --background-color1-dark-general:linear-gradient(7deg, #15538d  0% , #0c3557 35%, dodgerblue 140%);
+  /*Theme gris*/
+  --background-color2-general:  linear-gradient(30deg, rgb(170, 171, 172)  0% , rgb(212, 212, 212) 35%, rgb(156, 157, 158) 140%);
+  --background-color2-dark-general:linear-gradient(40deg, #949596  0% , #585858 35%, rgb(246, 251, 255) 140%);
+  --effect-waiting:rgb(151, 151, 151);
+  --blur-effect:rgba(48, 48, 48, 0.562);
+}
+
 nav{
   background-color:#454545;
   position: relative;
@@ -29,7 +44,7 @@ nav{
   opacity: 1;
 }
 /*Les codes de la section du milieu de la barre de Navigation débutent ici*/
-.navbar-middle-section{
+.navbar-middle-section ul{
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
   column-gap:18px;
@@ -68,69 +83,110 @@ nav{
   color:#060607;
   transition:all 0.45s;
 }
-.navbar-right-section img{
+.navbar-right-section  div  .menu-icon{
+background-image: url('./icons8-menu-normal.svg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 cursor: pointer;
 vertical-align: bottom;
-height: 45px;
+height: 30px;
+width: 30px;
 margin-right: 20px;
-display: none;
+display:none;
 }
 
- .menu-vertical-links li a,
-.menu-vertical-links li a:hover,
-.menu-vertical-button button,
-.menu-vertical-button button:hover,
-.menu-verticallinks{
-   display:none;
-    }
-/*---------RESPONSIVE--------*/
-@media (max-width:1000px) {
-  .navbar-middle-section li a{
-    display: none;
-  }
-  .navbar-right-section button{
-    display: none;
-  }
-  .navbar-right-section img{
-    display: block;
-  }
-  /*Brouillon pour tester le responsive en dessous*/
+/*----menu vertical------*/
+.menu-vertical-links{
+  display: none;
+  background: var(--blur-effect);
+  flex-direction: column;
+  gap:20px;
+  width:200px;
+  height: 0;
+  text-align:center;
+  list-style:none;
+  font-size:18px;
+  position:absolute;
+  top: 60px;
+  right: 1rem;
+  /*margin-top: 150px;*/
+  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-    .menu-vertical-links {
-      display:flex;
-      flex-direction: column;
-      gap:10px;
-      width:200px;
-      margin-left:20px;
-      text-align:center;
-      list-style:none;
-      font-size:18px;
-    }
-    .menu-vertical-links li a{
-      cursor: pointer;
-      text-decoration: none;
-      color: white;
-    }
-    .menu-vertical-links li a:hover{
+.menu-vertical-links li a{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.menu-vertical-links li a:hover{
   color:#fda561;
   text-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
               0px -1px 4px rgba(77, 77, 77, 0.3);
   transition:all 0.55s;
 }
 .menu-vertical-button button{
-  padding:10px;
+  padding:5px;
   background-color:transparent;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border:2px solid rgba(1, 196, 255, 0.938);
+  border-radius: 5px;
   color:rgba(1, 196, 255, 0.938);
-  font-size:18px;
-  width:1fr;
+  font-size:15px;
+  width:80%;
   min-width:80px;
   margin-inline:20px;
   cursor:pointer;
+  overflow: hidden;
 }
 .menu-vertical-button button:hover{
   background-color:rgb(6, 219, 247);
   color:#060607;
   transition:all 0.45s;
 }
+/*---------RESPONSIVE--------*/
+@media (max-width:1024px) {
+  .navbar-middle-section{
+    display: none;
+  }
+  .navbar-middle-section li a{
+    display: none;
+  }
+  .navbar-right-section button{
+    display: none;
+  }
+  .navbar-right-section div .menu-icon{
+    display: block;
+  }
+  .navbar-right-section div .change:hover{
+    background-image: url('./close-hover.svg');
+    transition: all 0.85s;
+  }
+  .open{
+    display:flex;
+    height: 200px;
+    padding-block: 15px;
+  }
+
+  .change{
+    background-image: url('./close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    vertical-align: bottom;
+    height:30px;
+    width: 30px;
+    margin-right: 20px;
+    list-style: none;
+    transition: all 0.15s ease;
+  }
+}
+
+
+@media (min-width:1025px) {
+  .change{
+    display: none;
+  }
 }
