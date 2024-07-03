@@ -58,7 +58,7 @@ body{
       color:#ffffff;
       z-index:-99;
     }
-    .header-section para-animate{
+    .header-section .para-animate{
       margin-inline:15px;
       font-size:70px;
       color:#fdba87;
