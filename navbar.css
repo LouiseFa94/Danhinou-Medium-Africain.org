@@ -23,7 +23,7 @@ nav{
   flex-shrink:1;
   position:fixed;
   max-width:1fr;
-  top:0;
+  top:20px;
   right:0;
   left:0;
   height:60px;
