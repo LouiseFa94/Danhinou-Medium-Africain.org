@@ -1,14 +1,13 @@
-footer{
-  background-color: #353535;
-  color: silver;
-  font-size: 14px;
-  font-family: Calibri;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20px 100px;
-  padding: 15px;
-}
-footer .foot,
+@media (max-width:320px) {
+
+  footer{
+    background-color: #353535;
+    color: silver;
+    font-size: 14px;
+    font-family: Calibri;
+    width: 210px;
+  }
+  footer .foot,
 .foot-principal{
   display: flex;
   flex-direction: column;
@@ -38,13 +37,30 @@ margin-top: -10px;
   gap: 7px;
 }
 .social-icons img{
-  width: 50px;
-  height:50px ;
+  width: 40px;
+  height:40px ;
   cursor: pointer;
 }
 
 .social-icons span:first-child img{
-  width:64px;
-  height:64px ;
+  width:54px;
+  height:54px ;
   cursor: pointer;
 }
+}
+
+
+@media (min-width:321px) {
+  footer{
+    background-color: #353535;
+    color: silver;
+    font-size: 14px;
+    font-family: Calibri;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 100px;
+    padding: 15px;
+  }
+}
+
+

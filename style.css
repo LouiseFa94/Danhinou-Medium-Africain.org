@@ -747,13 +747,15 @@ margin-block:40px;
   }
 }
 /*-----341px----*/
-@media (max-width:341px) {
+@media (max-width:320px) {
   html{
     background-color:#191919;
     scroll-behavior:smooth;
     color:#909090;
     font-family:Calibri;
+    max-width:320px;
     font-size:14px;
+    overflow-x: hidden;
   }
   /*video section styles*/
 .header-section {
@@ -770,7 +772,7 @@ margin-block:40px;
 } 
     .header-section video{
       height:100%;
-      width:110%;
+      width:100%;
       opacity:0.5;
       position:absolute;
       z-index:-100;
@@ -778,17 +780,17 @@ margin-block:40px;
     .init-description{
       margin-inline:4%;
       text-align: center;
-      font-size:12px;
+      font-size:90%;
       font-family:roboto;
       text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
       color:#ffffff;
       z-index:-99;
     }
-    .header-section .para-animate{
+    .header-section .typewriter{
       margin-inline:20px;
       margin-top: 20%;
       color:#fdba87;
-      font-size:17px;
+      font-size:120%;
       font-weight:bolder;
     }
     .header-section button{
@@ -796,9 +798,9 @@ margin-block:40px;
       background-color:#e7e7e7;
       border-radius:15px;
       border:2px solid #e7e7e7;
-      width:100px;
+      width:30%;
       padding:5px;
-      font-size:10px;
+      font-size:60%;
       cursor:pointer;
       z-index: 1;
     }
@@ -812,42 +814,41 @@ margin-block:40px;
       scale:1.2;
       transition:scale 0.55s;
     }
-    .fix-collapse{
-      padding-inline:10px;
-    } 
       .section1{
         background-color:#d4d4d4;
         color:#060607;
-        width:244px;
+        width:90%;
         font-weight:400;
-        padding:10px;
-        margin-top:-84px;
-        margin-inline:2px;
+        padding:6% 3%;
+        margin-top:-90px;
+        margin-inline:auto;
       }
       .section1 h1{
-        font-size:20px;
+        font-size:120%;
         font-weight:bold;
-        margin-bottom:5px;
+        margin-bottom:2%;
       }
       .section1 p{
-        margin-bottom:10px;
-        font-size:14px;
+        margin-bottom:3%;
+        font-size:100%;
       }
       /*La section2 est relative aux services rendus*/
       .section2{
         background-color:#191919;
         color:#b1b1b1;
-        width:244px;
+        width:100%;
         display:flex;
         flex-direction:column;
         font-weight:200;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
       }
+     
   /*Info de Nos services*/
       .beginner-client{
         font-family:Lucida Grande;
-        width:244px;
-        padding-block:15px;
+        width:100%;
+        padding:15px;
+        margin-left:auto;
       }
       .beginner-client h1{
         text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
@@ -862,13 +863,14 @@ margin-block:40px;
       }
   /*Section des services*/
       .services-opt{
-        width:244px;
+        width:94%;
         display:flex;
         gap: 15px;
         flex-wrap: wrap;
       }
       .services{
         background-color:#454545;
+        min-width:100%;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
         border-radius:5px;
         padding:8px;
@@ -878,7 +880,7 @@ margin-block:40px;
         cursor: pointer;
       }
       .services:hover{
-        scale:1.05;
+        scale:1.04;
         z-index:2;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
         background-color:#585858;
@@ -891,13 +893,14 @@ margin-block:40px;
         border-radius:5px;
         padding:12px;
         display:flex;
+        margin-left: 12px;
         flex-direction:column;
         align-items:center;
         justify-content:center;
         cursor: pointer;
         gap:6px;
         height:125px;
-        width:100% ;
+        width: 300px;
       }
       .services-to-update img{
         height:50px;
@@ -905,7 +908,7 @@ margin-block:40px;
         cursor: pointer;
       }
       .services-to-update:hover{
-        scale:1.05;
+        scale:1.08;
         z-index:2;
         transition: all 0.55s;
       }
@@ -926,45 +929,48 @@ margin-block:40px;
       .section3{
         background-color: #212121;
         display:flex;
+        text-align: center;
         flex-direction:column;
         justify-content:center;
         align-items:center;
         padding-bottom:15px;
-        width:244px;
+        width:95%;
       }
       .header1{
         font-family:Calibri;
         font-size:24px;
         margin-block:15px;
-        color:rgb(255, 255, 255);
+        color:rgb(233, 87, 87);
       }
       .subtitle-services{
         display:flex;
         color: #ffffff;
-        font-size:28px;
+        font-size:24px;
         margin-bottom:12px;
       }
       .faq{
         display:flex;
+        flex-direction: column;
         justify-content:center;
         align-items:center;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
         background-color:#444444;
-        width:460px;
-        margin-bottom:35px;
-        padding:15px;
-        height:230px;
-        border-radius:15px;
+        width:92%;
+        margin-bottom:15px;
+        padding:10px;
+        height:300px;
+        border-radius:5px;
         cursor: pointer;
       }
       .faq:hover{
-        background-color: #d32a00a9;
-        scale:1.1;
+        background-color: #0cbad1a9;
+        border-radius: 0%;
+        scale:1.05;
         transition:all 0.55s;
       }
-  
+
       .faq p+p{
-        font-size:18px;
+        font-size:17px;
         font-family:Lucida Grande;
         margin-left:14px;
         color:rgb(216, 216, 216);
@@ -972,14 +978,17 @@ margin-block:40px;
   /*Codage de la section4 commence juste après*/
   .section4{
     display:flex;
+    flex-wrap: wrap;
     align-items:center;
+    flex-direction: row;
     justify-content:center;
     text-align:center;
+    width:90%;
+    min-height:100px;
+    margin-inline:2%;
   }
   .section4 p{
-    font-size:50px;
-    margin-inline:50px;
-    margin-block:50px;
+    font-size:12px;
     color: rgb(255, 255, 255);
   }
   /*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
@@ -988,36 +997,37 @@ margin-block:40px;
     flex-direction: column;
     align-items:center;
     justify-content:center;
-    background-color:rgb(196, 196, 196);
+    background-color:rgb(252, 187, 11);
     box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+    width:80%;
     border-radius:2px;
-    padding-inline:20px;
-    padding-block:70px;
-    margin-inline:15%;
-    margin-bottom:25px;
+    padding-inline:5px;
+    padding-block:7px;
+    margin-left:25px;
   }
   
   .section5 .p1{
-    font-size:65px;
-    color:black;
-    margin-inline:5%;
+    font-size:17px;
+    color:rgb(0, 0, 0);
+    margin-inline:5px;
     text-align:center;
-    font-weight:500;
+    font-weight:900;
   }
   .section5 .p2{
     color:black;
-    margin-top:35px;
-    font-size:18px;
+    margin-top:5px;
+    font-size:12px;
     font-weight:200;
     font-family:Roboto;
+    text-align: center;
   }
   .section5 button{
     background-color:rgb(0, 0, 0);
-    margin-top:35px;
-    padding:18px;
+    margin-top:15px;
+    padding:10px;
     cursor: pointer;
     border-radius:30px;
-    font-size:18px;
+    font-size:10px;
     font-weight:200;
     color:#fff;
     border:none;
@@ -1037,22 +1047,24 @@ margin-block:40px;
   .section6{
     background-color:#315a28;
     color:#ffffff;
-    width:45%;
+    width:95%;
     display:flex;
     align-items:center;
     justify-content: center;
-    margin-left: 165px;
     margin-top: 15px;
+    margin-right: -4px;
+    padding-inline: 3px;
+    padding-bottom: 4px;
   }
     .section6 .info{
     font-family:Calibri;
-    font-size:14px;
-    width:50px;
-    padding:8px;
+    font-size:11px;
+    width:30px;
+    padding-right:20px;
   }
   /**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
    .image-field{
-    padding:5px;
+    padding-left:15px;
     opacity:0.84;
     list-style: none;
     display: flex;
@@ -1061,49 +1073,85 @@ margin-block:40px;
   }
   .image-field,
   .image-field::after{
-    width:200px;
-    height:200px;
+    width:170px;
+    height:170px;
     z-index: 0;
   }
-  
-  .image-field li  {
+  .image-field ul{
+    list-style:none;
+  }
+  .image-field li span {
     width:95%;
     height:95%;
     object-fit: cover;
     backface-visibility: hidden;
     opacity:0;
-    list-style: none;
     position: absolute;
+    bottom: 0;
+    right: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: animate 20s linear infinite 0s;
+    animation: animate 36s linear infinite 0s;
   }
   .image-field li:nth-child(1) span{
     animation-delay: 0s;
   }
   .image-field li:nth-child(2) span{
-    animation-delay: 5s;
+    animation-delay: 4s;
   }
   .image-field li:nth-child(3) span{
-    animation-delay: 10s;
+    animation-delay: 8s;
   }
   .image-field li:nth-child(4) span{
-    animation-delay: 15s;
+    animation-delay: 12s;
   }
   .image-field li:nth-child(5) span{
+    animation-delay: 16s;
+  }
+  .image-field li:nth-child(6) span{
     animation-delay: 20s;
+  }
+  .image-field li:nth-child(7) span{
+    animation-delay: 24s;
+  }
+  .image-field li:nth-child(8) span{
+    animation-delay: 28s;
+  }
+  .image-field li:nth-child(9) span{
+    animation-delay: 32s;
+  }
+  .image-field li:nth-child(10) span{
+    animation-delay: 36s;
   }
   @keyframes animate{
     0%{
       opacity: 0;
     }
-    8%{
+    10%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 0;
+    }
+    30%{
+      opacity: 0;
+    }
+    40%{
       opacity: 1;
     }
-    17%{
-      opacity: 0.75;
+    50%{
+      opacity: 1;
     }
-    25%{
+    60%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 0;
+    }
+    90%{
       opacity: 0;
     }
     100%{
@@ -1111,39 +1159,43 @@ margin-block:40px;
     }
   }
   .section6 .image-field img{
-    height:200px;
-    width:200px;
+    height:100%;
+    width:114%;
     cursor:pointer;
   }
   /*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
+  .section-master{
+    width:100%;
+  }
   .section-master p{
     text-align:center;
   }
   .master-presta-info{
     display:flex;
+    flex-wrap: wrap;
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    gap:45px;
+    gap:10px;
   }
   .picture-master{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    width:25px;
-    height:46px;
+    width:95%;
+    height:240px;
     color:#ffffff;
   }
   
   .picture-master h2,
   .picture-master p{
-    margin-top:12px;
+    margin-top:5px;
   }
   
   .picture-master img{
-    width:100%;
-    height:100%;
+    width:200px;
+    height:200px;
     object-fit:cover;
     border-radius:1px;
     cursor: pointer;
@@ -1154,7 +1206,7 @@ margin-block:40px;
     display:flex;
     align-items:center;
     justify-content:center;
-    max-width:132.8px;
+    max-width:300px;
     width:100%;
     position:relative;
     padding-left:7px;
@@ -1162,35 +1214,18 @@ margin-block:40px;
     
   }
   .wrapper button{
-    border:none;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background-color:rgba(39, 39, 39, 0.945);
-    cursor:pointer;
-    position: absolute;
-    top:50%;
-    transform:translateY(-50%);
-    box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
-               0px -1px 4px rgba(77, 77, 77, 0.3);
-    z-index: 1;
+  display: none;
   }
   .wrapper img{
     width:100%;
     height:100%;
     
   }
-  .wrapper #btn1{
-    left:22px; 
-  }
-  .wrapper #btn2{
-    right:22px;
-  }
   .wrapper .carousel{
     display:flex;
     flex-direction:row;
     align-items:center;
-    gap:25px;
+    gap:10px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth; 
@@ -1221,30 +1256,30 @@ margin-block:40px;
     justify-content:center;
   }
   .card .img img {
-    width:32px;
-    height:36px;
+    width:140px;
+    height:220px;
     object-fit:cover;
     border-radius:5px;
   }
-  
+  }
   /*je commence par gérer le responsive design grâce aux medias querries*/
-  @media screen and (max-width: 900px) {
+ /* @media screen and (max-width: 900px) {
     .card .img img{
       width:25px;
       height:36px;
       border-radius:20px;
       transition: all 0.55s;
     }  
-  }
+  }*/
   
-  @media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 600px) {
     .card .img img{
       width:15px;
       height:26px;
       border-radius:15px;
       transition:all 0.55s;
     }  
-  }
+  }*/
   
   /*C'est du code pour controler l"affichage des textes*/
   
@@ -1258,7 +1293,7 @@ margin-block:40px;
     }
   }
   
-  .para-animate {
+  .typewriter {
     animation-name: descriptionAnimate;
     animation-duration: 3s;
     font-weight: 100;
@@ -1278,20 +1313,22 @@ margin-block:40px;
   .section-chroniques {
     color:#ffffff;
     font-size:20px;
+    width: 95%;
   }
   .title p{
     margin-block:25px;
     text-align:center;
-    font-size:40px;
+    font-size:25px;
     font-weight:300;
+    text-decoration: underline;
     color: #fdba87;
   }
   
   .chroniques-layout{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:center;
     padding-bottom:40px;
   }
   
@@ -1301,27 +1338,29 @@ margin-block:40px;
     justify-content:center;
     align-items:center;
     gap:10px;
+    width:100%;
   }
   .picture-chroniques{
-    width:35px;
-    height:32px;
+    width:95%;
+    height:200px;
   }
   .chroniques-description{
     display:flex;
     flex-direction:column;
     justify-content:left;
-    width:35px;
+    width:100%;
     line-height:1.3;
+    text-align: center;
   }
     .chroniques-description span , .chroniques-description p{
       color:rgb(133, 133, 133);
       font-weight:200;
-      margin-block:0;
-      text-align: left;
+      margin-block:10px;
+      font-size: medium;
     }
     .chroniques-description h2{
       font-weight:bolder;
-      font-size:25px;
+      font-size:18px;
       margin-block:0;
     }
   
@@ -1333,125 +1372,53 @@ margin-block:40px;
     box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
   }
   /*Les témoignages*/
-  .testimony{
-    background-color:#191919;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding-bottom: 20px;
-  }
-  .subtitle p{
-  color: rgba(255, 255, 255, 0.945);
-  font-size:35px;
-  margin-block:40px;
-  }
-  .testimonies-visual{
-    display:grid;
-    grid-template-columns: 46px 46px;
-    column-gap: 10px;
-    grid-template-rows:21px 21px;
-    row-gap: 20px;
-  }
-  .user-testimony{
-    background-color: #ffffff;
-    border-radius: 4px;
-    color:black;
-    font-size: 16px;
-    display:flex;
-    flex-direction: column;
-    gap:5px;
-    padding:20px;
-  }
-  .user-picture img{
-    opacity: 1;
-    width: 30px;
-    height: 30px;
-    border-radius: 3px;
-    align-items: center;
-  }
-  .user-about{
+  .testimonials {
     display: flex;
-    flex-direction: row;
-    align-items:center;
-    margin-bottom: 6px;
-  }
-  .user-about button{
-    margin-left:auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding-block:5px;
-    padding-inline: 10px;
-    margin-bottom: 6px;
-  }
-  .user-about button img{
-    width: 15px;
-    height: 15px;
-  }
-  .user-name{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:left;
-    line-height: 1;
-    margin-left: 10px;
-    margin-bottom: 3px;
-  }
-  .user-name .name{
-    font-weight: 700;
-  }
-  .user-name .surname{
-    margin-right:auto;
-  }
-  .user-name .surname ,
-  .publish-date{
-    color: rgb(156, 156, 156);
-    font-size: 14.4px;
-    font-weight: 400;
-  }
-  .user-publish p{
-    font-weight: 400;
-  }
-  .user-publish p span{
-    color: rgb(2, 110, 218);
-    font-weight: 500;
-  }
-  .interactivity{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 130px;
-    margin-top: 5px;
-  }
-  .interactivity div{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-  }
-  .interactivity img{
-    width:15px ;
-    height:15px ;
-  }
-  .interactivity span{
+    padding: 20px;
+    gap:2%;
+}
+
+.testimonial {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    height: 230px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+}
+
+.testimonial span {
     font-size: 14px;
-    font-weight: bold;
-    color: #6e6e6e;
-    margin-inline:2px ;
-    margin-bottom: 2px;
-  }
+    font-style: italic;
+    color: #777;
+}
   
   /*Statistiques du Maître Spirituel*/
   .stats-ctn{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    margin-top: 40px;
+    justify-content:center;
+    gap:14px;
+    text-align: center;
+    margin-block: 40px;
+    width: 200px;
   }
     .stat{
       display: flex;
@@ -1461,15 +1428,14 @@ margin-block:40px;
     }
     .stat span:first-child {
       color: rgb(172, 0, 252);
-      font-size: 55px;
+      font-size: 24px;
       font-weight: 700;
     }
     .stat span:last-child {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 400;
       color : #ffffff ;
     }
-  }
 
 
 /*------Pour des écrans smartphone--soit--430px---au---plus-----------*/

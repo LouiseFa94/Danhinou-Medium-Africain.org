@@ -76,6 +76,7 @@ carousel.addEventListener("mousemove",dragging);
 document.addEventListener("mouseup",dragStop);
 carousel.addEventListener("scroll",InfiniteScroll);
 
+
 /*Les scripts pour faire afficher la barre verticale lorsque l'icône menu  est clické*/
 const navbarRight =document.querySelector('.navbar-right-section');
 const menuButton=document.querySelector('.navbar-right-section div .menu-icon');
@@ -87,6 +88,58 @@ navbarRight.onclick=function() {
     menuButton.classList = isOpen ? 'change':'menu-icon';
 }
 
+//Texte animé comme en saisie
+function typeWriterEffect(elements) {
+    elements.forEach((element) => {
+        const text = element.textContent;
+        let charIndex = 0;
 
+        function typeWriter() {
+            if (charIndex < text.length) {
+                element.textContent = text.substring(0, charIndex + 1);
+                charIndex++;
+                setTimeout(typeWriter, 120); // Délai entre chaque caractère (en millisecondes)
+            }
+        }
 
+        // Lancer l'animation au chargement de la page
+        window.addEventListener('load', typeWriter);
+    });
+}
 
+// Appel de la fonction pour tous les éléments avec la classe "typewriter"
+const typewriterElement = document.querySelectorAll('.typewriter');
+const typewriterPara =document.querySelectorAll('.init-description');
+const typewriterTextService =document.querySelectorAll('.services p');
+typeWriterEffect(typewriterTextService);
+typeWriterEffect(typewriterPara);
+typeWriterEffect(typewriterElement);
+
+//Effet de défilement des mots d'un texte
+        const words = ["Médium", "Magicien", "Guérisseur", "Purificateur","Africain"];
+        let currentIndex = 0;
+
+        function changeWord() {
+            const textElement = document.getElementById("changingText");
+            textElement.textContent = `Danhinou ${words[currentIndex]}`;
+            currentIndex = (currentIndex + 1) % words.length;
+        }
+
+        setInterval(changeWord, 6000); // Change le mot toutes les 2 secondes
+
+const slides = document.querySelectorAll('.testimonial');
+let currentSlide = 0;
+
+function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+        slide.style.display = index === slideIndex ? 'block' : 'none';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Démarrez le carrousel automatiquement
+setInterval(nextSlide, 5000); // Changez l'intervalle selon vos préférences
