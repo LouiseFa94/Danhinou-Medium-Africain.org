@@ -125,7 +125,9 @@ typeWriterEffect(typewriterElement);
             currentIndex = (currentIndex + 1) % words.length;
         }
 
-        setInterval(changeWord, 6000); // Change le mot toutes les 2 secondes
+        setInterval(changeWord, 6000); 
+        
+        // Change le mot toutes les 2 secondes
 
 const slides = document.querySelectorAll('.testimonial');
 let currentSlide = 0;

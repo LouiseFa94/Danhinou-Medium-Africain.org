@@ -1,4 +1,4 @@
-:root {
+html {
   --background-color1-general:  linear-gradient(30deg, rgb(68, 151, 172)  0% , rgb(108, 192, 212) 35%, rgb(46, 101, 156) 140%);
   --background-blue:rgb(68, 151, 172);
   --background-dark-blue:#15538d;
@@ -22,8 +22,7 @@ nav{
   justify-content:space-between;
   flex-shrink:1;
   position:fixed;
-  max-width:1fr;
-  top:20px;
+  top:0;
   right:0;
   left:0;
   height:60px;
@@ -37,6 +36,7 @@ nav{
   max-width:250px;
   width:200px;
   flex-shrink:0;
+  font-size:medium;
 }
 .navbar-left-section img{
   height:50%;
@@ -183,7 +183,16 @@ display:none;
     transition: all 0.15s ease;
   }
 }
-
+@media (max-width:320px) {
+  .navbar-right-section{
+    right:10px;
+  }
+  .navbar-right-section div  .menu-icon,
+  .change{
+    height: 20px;
+    width: 20px;
+  }
+}
 
 @media (min-width:1025px) {
   .change{
