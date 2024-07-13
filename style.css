@@ -5,9 +5,6 @@ html *{
   -webkit-user-select: none;
   user-select: none;
 }
-img{
-  opacity: 0.7;
-}
 body{
   display:flex;
   flex-direction:column;
@@ -1459,6 +1456,7 @@ body{
         grid-template-rows:30px 90px;
         row-gap: 5px;
         cursor: pointer;
+        width:100%;
       }
       .services:hover{
         scale:1.04;
@@ -4618,8 +4616,1363 @@ body{
     }
 }
 
-/*------Pour des écrans smartphone--soit--430px---au---plus-----------*/
-@media (min-width:481px) {
+
+/*-----Ecran 431px et 480px----*/
+@media (min-width:431px) and (max-width:480px){
+  html{
+  background-color:#191919;
+  height:5000px;
+  padding-top:20px;
+  scroll-behavior:smooth;
+  color:#909090;
+  font-family:Calibri;
+  font-size:14px;
+  margin-left:0px;
+  overflow-x: hidden;
+}
+  
+/*video section styles*/
+.header-section {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center; 
+  flex-shrink:0;
+  gap:8px;
+  color:#e7e7e7;
+  margin-top:0px;
+  height:200px;
+  width:330px;
+} 
+    .header-section video{
+      height:300px;
+      width:500px;
+      opacity:0.5;
+      position:absolute;
+      z-index:-100;
+    }
+    .init-description{
+      margin-inline:4%;
+      text-align: center;
+      font-size:15px;
+      font-family:roboto;
+      text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
+      color:#ffffff;
+      z-index:-99;
+    }
+    .header-section .typewriter{
+      margin-inline:20px;
+      margin-top: 20%;
+      color:#fdba87;
+      font-size:26px;
+      font-weight:bolder;
+    }
+    .header-section button{
+      color:#060607;
+      background-color:#e7e7e7;
+      border-radius:15px;
+      border:2px solid #e7e7e7;
+      width:30%;
+      padding:5px;
+      font-size:60%;
+      cursor:pointer;
+      z-index: 1;
+    }
+    .header-section button:hover{
+      scale:0.85;
+      background-color:#f3f3f3;
+      color: #363636;
+      transition: all 0.55s;
+    }
+    .header-section button:active{
+      scale:1.2;
+      transition:scale 0.55s;
+    }
+      .section1{
+        background-color:rgb(248 248 248);
+        color:#060607;
+        width:90%;
+        font-weight:400;
+        padding:6% 4%;
+        margin-left:12px;
+        margin-top:20px;
+      }
+      .section1 h1{
+        font-size:120%;
+        font-weight:bold;
+        margin-bottom:2%;
+      }
+      .section1 p{
+        margin-bottom:3%;
+        font-size:100%;
+      }
+      /*La section2 est relative aux services rendus*/
+      .section2{
+        
+        color:#b1b1b1;
+        width:92%;
+        display:flex;
+        flex-direction:column;
+        font-weight:200;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+     
+  /*Info de Nos services*/
+      .beginner-client{
+        font-family:Lucida Grande;
+        width:100%;
+        padding:20px;
+        margin-left:-25px;
+      }
+      .beginner-client h1{
+        text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        font-size:45px;
+        font-weight:700;
+        color:gold;
+      }
+      .beginner-client p{
+        font-size:20px;
+        padding-top:10px;
+        margin-top:7.5px;
+        color: #e7e7e7;
+      }
+  /*Section des services*/
+      .services-opt{
+        display:flex;
+        gap:1%;
+        flex-wrap: wrap;
+        margin-left:1.15%;
+      }
+      .services{
+        background-color:#454545;
+        min-width:100px;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:8px;
+        display:grid;
+        grid-template-rows:30px 90px;
+        row-gap:4px;
+        cursor: pointer;
+        width:200px;
+        height:150px;
+        margin-bottom:1%;
+      }
+      .services:hover{
+        scale:1.04;
+        z-index:2;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
+        background-color:#585858;
+        color:#e7e7e7;
+        transition: all 0.5s;
+      }
+      .services-to-update{
+        background-color:rgb(16, 173, 212);
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:12px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin-right:0px;
+        cursor: pointer;
+        gap:2px;
+        height:142px;
+        width:191px
+      }
+      .services-to-update img{
+        height:50px;
+        width:50px;
+        cursor: pointer;
+      }
+      .services-to-update:hover{
+        scale:1.01;
+        z-index:2;
+        transition: all 0.55s;
+      }
+      .services p{
+        font-size:18px;
+        font-family:Calibri;
+      }
+      h1{
+        font-size:20px;
+        font-family:Calibri;
+      }
+    
+      h3{
+        font-size:14px;
+        padding-block:10px;
+      }
+      /*La section3 est codé pour gérer les FAQ*/  
+      .section3{
+        background-color: #212121;
+        display:flex;
+        text-align: center;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding-bottom:15px;
+        width:100%;
+        margin-left:6px;
+      }
+      .header1{
+        font-family:Calibri;
+        font-size:24px;
+        margin-block:15px;
+        color:rgb(93 233 87);
+      }
+      .subtitle-services{
+        display:flex;
+        color: #ffffff;
+        font-size:24px;
+        margin-bottom:12px;
+      }
+      .faq{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color:#444444;
+        width:92%;
+        margin-bottom:5px;
+        padding:10px;
+        height:180px;
+        border-radius:5px;
+        cursor: pointer;
+      }
+      .faq:hover{
+        background-color: #0cbad1a9;
+        border-radius: 0%;
+        scale:1.01;
+        transition:all 0.55s;
+      }
+
+      .faq p+p{
+        font-size:17px;
+        font-family:Lucida Grande;
+        margin-left:14px;
+        color:rgb(216, 216, 216);
+      }
+  /*Codage de la section4 commence juste après*/
+  .section4{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    flex-direction: row;
+    justify-content:center;
+    text-align:center;
+    width:375px;
+    margin-left:60px;
+    min-height:100px;
+  }
+  .section4 p{
+    font-size:17px;
+    color: #fdba87;
+  }
+  /*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
+  .section5{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(223 183 0);
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+    width:90%;
+    height:160px;
+    border-radius:8px;
+    padding-inline:5px;
+    padding-block:7px;
+    margin-left:5.245%;
+  }
+  
+  .section5 .p1{
+    font-size:20px;
+    color:rgb(0 0 0);
+    margin-inline:5px;
+    text-align:center;
+    font-weight:900;
+  }
+  .section5 .p2{
+    color:black;
+    margin-top:5px;
+    font-size:15px;
+    font-weight:200;
+    font-family:Roboto;
+    text-align: center;
+  }
+  .section5 button{
+    background-color:rgb(0, 0, 0);
+    margin-top:15px;
+    padding:15px;
+    cursor: pointer;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:200;
+    color:#fff;
+    border:none;
+  }
+  .section5 button:hover{
+    background-color:rgb(23, 24, 24);
+    scale:1.1;
+    transition: scale 0.35s;
+    font-weight:bold;
+  }
+  .section5 button:active{
+    background-color:rgb(16, 173, 212);
+    scale: 0.9;
+    transition: scale 0.35s;
+  }
+  /*La section6 pour l'image de background définissant les traditions du vodoun */
+  .section6{
+    background-color:#315a28;
+    color:#ffffff;
+    width:470px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top: 15px;
+    padding-bottom:9px;
+    padding-right:1px;
+    margin-left:15px;
+  }
+  .section6 .info{
+    font-family:Calibri;
+    font-size:16px;
+    width:140px;
+  }
+  /**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
+   .image-field{
+    padding-left:5px;
+    padding-bottom:5px;
+    opacity:0.84;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .image-field,
+  .image-field::after{
+    width:210px;
+    height:170px;
+    z-index: 0;
+  }
+  .image-field ul{
+    list-style:none;
+  }
+  .image-field li span {
+    width:95%;
+    height:95%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    opacity:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 36s linear infinite 0s;
+  }
+  .image-field li:nth-child(1) span{
+    animation-delay: 0s;
+  }
+  .image-field li:nth-child(2) span{
+    animation-delay: 4s;
+  }
+  .image-field li:nth-child(3) span{
+    animation-delay: 8s;
+  }
+  .image-field li:nth-child(4) span{
+    animation-delay: 12s;
+  }
+  .image-field li:nth-child(5) span{
+    animation-delay: 16s;
+  }
+  .image-field li:nth-child(6) span{
+    animation-delay: 20s;
+  }
+  .image-field li:nth-child(7) span{
+    animation-delay: 24s;
+  }
+  .image-field li:nth-child(8) span{
+    animation-delay: 28s;
+  }
+  .image-field li:nth-child(9) span{
+    animation-delay: 32s;
+  }
+  .image-field li:nth-child(10) span{
+    animation-delay: 36s;
+  }
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 0;
+    }
+    30%{
+      opacity: 0;
+    }
+    40%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 1;
+    }
+    60%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 0;
+    }
+    90%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  .section6 .image-field img{
+    height:100%;
+    width:114%;
+    cursor:pointer;
+  }
+  /*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
+  .section-master{
+    width:100%;
+  }
+  .section-master p{
+    text-align:center;
+    font-size:20px;
+  }
+  .master-presta-info{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+  }
+  .picture-master{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left:14px;
+    width:100%;
+    height:240px;
+    color:#ffffff;
+  }
+  
+  .picture-master h2,
+  .picture-master p{
+    margin-top:1px;
+  }
+  
+  .picture-master img{
+    width:400px;
+    height:200px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:1px;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Scrollable image*/
+  .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width:480px;
+    width:100%;
+    position:relative;
+    padding-left:7px;
+    margin-bottom: 25px;
+  }
+  .wrapper button{
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:rgb(0 0 0 / 95%);
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
+               0px -1px 4px rgba(77, 77, 77, 0.3);
+    z-index: 1;
+  }
+  .wrapper img{
+    width:100%;
+    height:100%;
+    
+  }
+  .wrapper #btn1{
+    left:22px; 
+  }
+  .wrapper #btn2{
+    right:10px;
+  }
+  .wrapper img{
+    width:100%;
+    height:100%;
+    
+  }
+  .wrapper .carousel{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+  }
+  .carousel::-webkit-scrollbar{
+    display:none;
+  }
+  .carousel .no-transition{
+    scroll-behavior:auto;
+  }
+  .dragging {
+    cursor:grab;
+    scroll-snap-type:none;
+    scroll-behavior: auto;
+  }
+  .carousel .card{
+    scroll-snap-align:start;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .card .img{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+  }
+  .card .img img {
+    width:150px;
+    height:260px;
+    object-fit:cover;
+    border-radius:5px;
+  }
+  
+  .section-chroniques {
+    color:#ffffff;
+    font-size:20px;
+    width:100%;
+  }
+  .title p{
+    margin-block:25px;
+    text-align:center;
+    font-size:25px;
+    font-weight:300;
+    text-decoration: underline;
+    color: #fdba87;
+  }
+  
+  .chroniques-layout{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:40px;
+  }
+  
+  .chroniques-visual{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin-left:2%;
+  }
+  .picture-chroniques{
+    width:95%;
+    height:200px;
+  }
+  .chroniques-description{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    width:100%;
+    line-height:1.3;
+    text-align: center;
+  }
+    .chroniques-description span , .chroniques-description p{
+      color:rgb(133, 133, 133);
+      font-weight:200;
+      margin-block:10px;
+      font-size: medium;
+    }
+    .chroniques-description h2{
+      font-weight:bolder;
+      font-size:18px;
+      margin-block:0;
+    }
+  
+  .picture-chroniques img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Les témoignages*/
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:12px;
+    padding-top:15px;
+    gap:2%;
+}
+
+.testimonial {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    height: 240px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+}
+
+.testimonial span {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(133, 133, 133);
+}
+  
+  /*Statistiques du Maître Spirituel*/
+  .stats-ctn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:14px;
+    text-align: center;
+    margin-block: 40px;
+    width:100%;
+    }
+    .stat{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+    .stat span:first-child {
+      color: rgb(98 110 241);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .stat span:last-child {
+      font-size: 16px;
+      font-weight: 400;
+      color : #ffffff ;
+    }
+}
+
+/*-----Ecran 481px et 480px----*/
+@media (min-width:481px) and (max-width:1309px){
+  html{
+  background-color:#191919;
+  height:5000px;
+  padding-top:20px;
+  scroll-behavior:smooth;
+  color:#909090;
+  font-family:Calibri;
+  font-size:14px;
+  margin-left:0px;
+  overflow-x: hidden;
+}
+  
+/*video section styles*/
+.header-section {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center; 
+  flex-shrink:0;
+  gap:8px;
+  color:#e7e7e7;
+  margin-top:0px;
+  height:200px;
+  width:330px;
+} 
+    .header-section video{
+      height:300px;
+      width:500px;
+      opacity:0.5;
+      position:absolute;
+      z-index:-100;
+    }
+    .init-description{
+      margin-inline:4%;
+      text-align: center;
+      font-size:15px;
+      font-family:roboto;
+      text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
+      color:#ffffff;
+      z-index:-99;
+    }
+    .header-section .typewriter{
+      margin-inline:20px;
+      margin-top: 20%;
+      color:#fdba87;
+      font-size:26px;
+      font-weight:bolder;
+    }
+    .header-section button{
+      color:#060607;
+      background-color:#e7e7e7;
+      border-radius:15px;
+      border:2px solid #e7e7e7;
+      width:30%;
+      padding:5px;
+      font-size:60%;
+      cursor:pointer;
+      z-index: 1;
+    }
+    .header-section button:hover{
+      scale:0.85;
+      background-color:#f3f3f3;
+      color: #363636;
+      transition: all 0.55s;
+    }
+    .header-section button:active{
+      scale:1.2;
+      transition:scale 0.55s;
+    }
+      .section1{
+        background-color:rgb(248 248 248);
+        color:#060607;
+        width:90%;
+        font-weight:400;
+        padding:6% 4%;
+        margin-left:12px;
+        margin-top:20px;
+      }
+      .section1 h1{
+        font-size:120%;
+        font-weight:bold;
+        margin-bottom:2%;
+      }
+      .section1 p{
+        margin-bottom:3%;
+        font-size:100%;
+      }
+      /*La section2 est relative aux services rendus*/
+      .section2{
+        
+        color:#b1b1b1;
+        width:92%;
+        display:flex;
+        flex-direction:column;
+        font-weight:200;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+     
+  /*Info de Nos services*/
+      .beginner-client{
+        font-family:Lucida Grande;
+        width:100%;
+        padding:20px;
+        margin-left:-25px;
+      }
+      .beginner-client h1{
+        text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        font-size:45px;
+        font-weight:700;
+        color:gold;
+      }
+      .beginner-client p{
+        font-size:20px;
+        padding-top:10px;
+        margin-top:7.5px;
+        color: #e7e7e7;
+      }
+  /*Section des services*/
+      .services-opt{
+        display:flex;
+        gap:1%;
+        flex-wrap: wrap;
+        margin-left:1.15%;
+      }
+      .services{
+        background-color:#454545;
+        min-width:100px;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:8px;
+        display:grid;
+        grid-template-rows:30px 90px;
+        row-gap:4px;
+        cursor: pointer;
+        width:200px;
+        height:150px;
+        margin-bottom:1%;
+      }
+      .services:hover{
+        scale:1.04;
+        z-index:2;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
+        background-color:#585858;
+        color:#e7e7e7;
+        transition: all 0.5s;
+      }
+      .services-to-update{
+        background-color:rgb(16, 173, 212);
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding:12px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin-right:0px;
+        cursor: pointer;
+        gap:2px;
+        height:142px;
+        width:191px
+      }
+      .services-to-update img{
+        height:50px;
+        width:50px;
+        cursor: pointer;
+      }
+      .services-to-update:hover{
+        scale:1.01;
+        z-index:2;
+        transition: all 0.55s;
+      }
+      .services p{
+        font-size:18px;
+        font-family:Calibri;
+      }
+      h1{
+        font-size:20px;
+        font-family:Calibri;
+      }
+    
+      h3{
+        font-size:14px;
+        padding-block:10px;
+      }
+      /*La section3 est codé pour gérer les FAQ*/  
+      .section3{
+        background-color: #212121;
+        display:flex;
+        text-align: center;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding-bottom:15px;
+        width:100%;
+        margin-left:6px;
+      }
+      .header1{
+        font-family:Calibri;
+        font-size:24px;
+        margin-block:15px;
+        color:rgb(93 233 87);
+      }
+      .subtitle-services{
+        display:flex;
+        color: #ffffff;
+        font-size:24px;
+        margin-bottom:12px;
+      }
+      .faq{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color:#444444;
+        width:92%;
+        margin-bottom:5px;
+        padding:10px;
+        height:180px;
+        border-radius:5px;
+        cursor: pointer;
+      }
+      .faq:hover{
+        background-color: #0cbad1a9;
+        border-radius: 0%;
+        scale:1.01;
+        transition:all 0.55s;
+      }
+
+      .faq p+p{
+        font-size:17px;
+        font-family:Lucida Grande;
+        margin-left:14px;
+        color:rgb(216, 216, 216);
+      }
+  /*Codage de la section4 commence juste après*/
+  .section4{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    flex-direction: row;
+    justify-content:center;
+    text-align:center;
+    width:375px;
+    margin-left:60px;
+    min-height:100px;
+  }
+  .section4 p{
+    font-size:17px;
+    color: #fdba87;
+  }
+  /*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
+  .section5{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(223 183 0);
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+    width:90%;
+    height:160px;
+    border-radius:8px;
+    padding-inline:5px;
+    padding-block:7px;
+    margin-left:5.245%;
+  }
+  
+  .section5 .p1{
+    font-size:20px;
+    color:rgb(0 0 0);
+    margin-inline:5px;
+    text-align:center;
+    font-weight:900;
+  }
+  .section5 .p2{
+    color:black;
+    margin-top:5px;
+    font-size:15px;
+    font-weight:200;
+    font-family:Roboto;
+    text-align: center;
+  }
+  .section5 button{
+    background-color:rgb(0, 0, 0);
+    margin-top:15px;
+    padding:15px;
+    cursor: pointer;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:200;
+    color:#fff;
+    border:none;
+  }
+  .section5 button:hover{
+    background-color:rgb(23, 24, 24);
+    scale:1.1;
+    transition: scale 0.35s;
+    font-weight:bold;
+  }
+  .section5 button:active{
+    background-color:rgb(16, 173, 212);
+    scale: 0.9;
+    transition: scale 0.35s;
+  }
+  /*La section6 pour l'image de background définissant les traditions du vodoun */
+  .section6{
+    background-color:#315a28;
+    color:#ffffff;
+    width:470px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top: 15px;
+    padding-bottom:9px;
+    padding-right:1px;
+    margin-left:15px;
+  }
+  .section6 .info{
+    font-family:Calibri;
+    font-size:16px;
+    width:140px;
+  }
+  /**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
+   .image-field{
+    padding-left:5px;
+    padding-bottom:5px;
+    opacity:0.84;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .image-field,
+  .image-field::after{
+    width:210px;
+    height:170px;
+    z-index: 0;
+  }
+  .image-field ul{
+    list-style:none;
+  }
+  .image-field li span {
+    width:95%;
+    height:95%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    opacity:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 36s linear infinite 0s;
+  }
+  .image-field li:nth-child(1) span{
+    animation-delay: 0s;
+  }
+  .image-field li:nth-child(2) span{
+    animation-delay: 4s;
+  }
+  .image-field li:nth-child(3) span{
+    animation-delay: 8s;
+  }
+  .image-field li:nth-child(4) span{
+    animation-delay: 12s;
+  }
+  .image-field li:nth-child(5) span{
+    animation-delay: 16s;
+  }
+  .image-field li:nth-child(6) span{
+    animation-delay: 20s;
+  }
+  .image-field li:nth-child(7) span{
+    animation-delay: 24s;
+  }
+  .image-field li:nth-child(8) span{
+    animation-delay: 28s;
+  }
+  .image-field li:nth-child(9) span{
+    animation-delay: 32s;
+  }
+  .image-field li:nth-child(10) span{
+    animation-delay: 36s;
+  }
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 0;
+    }
+    30%{
+      opacity: 0;
+    }
+    40%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 1;
+    }
+    60%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 0;
+    }
+    90%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  .section6 .image-field img{
+    height:100%;
+    width:114%;
+    cursor:pointer;
+  }
+  /*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
+  .section-master{
+    width:100%;
+  }
+  .section-master p{
+    text-align:center;
+    font-size:20px;
+  }
+  .master-presta-info{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+  }
+  .picture-master{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left:14px;
+    width:100%;
+    height:240px;
+    color:#ffffff;
+  }
+  
+  .picture-master h2,
+  .picture-master p{
+    margin-top:1px;
+  }
+  
+  .picture-master img{
+    width:400px;
+    height:200px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:1px;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Scrollable image*/
+  .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width:480px;
+    width:100%;
+    position:relative;
+    padding-left:7px;
+    margin-bottom: 25px;
+  }
+  .wrapper button{
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:rgb(0 0 0 / 95%);
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
+               0px -1px 4px rgba(77, 77, 77, 0.3);
+    z-index: 1;
+  }
+  .wrapper img{
+    width:100%;
+    height:100%;
+    
+  }
+  .wrapper #btn1{
+    left:22px; 
+  }
+  .wrapper #btn2{
+    right:10px;
+  }
+  .wrapper img{
+    width:100%;
+    height:100%;
+    
+  }
+  .wrapper .carousel{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+  }
+  .carousel::-webkit-scrollbar{
+    display:none;
+  }
+  .carousel .no-transition{
+    scroll-behavior:auto;
+  }
+  .dragging {
+    cursor:grab;
+    scroll-snap-type:none;
+    scroll-behavior: auto;
+  }
+  .carousel .card{
+    scroll-snap-align:start;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .card .img{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+  }
+  .card .img img {
+    width:150px;
+    height:260px;
+    object-fit:cover;
+    border-radius:5px;
+  }
+  
+  .section-chroniques {
+    color:#ffffff;
+    font-size:20px;
+    width:100%;
+  }
+  .title p{
+    margin-block:25px;
+    text-align:center;
+    font-size:25px;
+    font-weight:300;
+    text-decoration: underline;
+    color: #fdba87;
+  }
+  
+  .chroniques-layout{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:40px;
+  }
+  
+  .chroniques-visual{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin-left:2%;
+  }
+  .picture-chroniques{
+    width:95%;
+    height:200px;
+  }
+  .chroniques-description{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    width:100%;
+    line-height:1.3;
+    text-align: center;
+  }
+    .chroniques-description span , .chroniques-description p{
+      color:rgb(133, 133, 133);
+      font-weight:200;
+      margin-block:10px;
+      font-size: medium;
+    }
+    .chroniques-description h2{
+      font-weight:bolder;
+      font-size:18px;
+      margin-block:0;
+    }
+  
+  .picture-chroniques img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor: pointer;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  /*Les témoignages*/
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:12px;
+    padding-top:15px;
+    gap:2%;
+}
+
+.testimonial {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    height: 240px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+}
+
+.testimonial span {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(133, 133, 133);
+}
+  
+  /*Statistiques du Maître Spirituel*/
+  .stats-ctn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:14px;
+    text-align: center;
+    margin-block: 40px;
+    width:100%;
+    }
+    .stat{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+    .stat span:first-child {
+      color: rgb(98 110 241);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .stat span:last-child {
+      font-size: 16px;
+      font-weight: 400;
+      color : #ffffff ;
+    }
+/*------Pour des écrans smartphone--soit--481px---au---plus-----------
+@media (min-width:481px) and (max-width:1309px){
  
 
   html{
