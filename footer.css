@@ -441,7 +441,7 @@ margin-top:40px;
 }
 
 /*---Ecran 1309px +---*/
-@media (min-width:481px) and (max-width:1309px){
+@media (min-width:481px) and (max-width:1380px){
 
   footer{
     background-color: #353535;
