@@ -1,20 +1,52 @@
+
 <?php
-if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
-    $destinataire = 'cedrictognifode@gmail.com'; // Remplacez par votre adresse e-mail
-    $nom = $_POST['nom'];
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+// Inclure les fichiers de PHPMailer
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
     $prenom = $_POST['prenom'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Entête de l'e-mail
-    $entete = "From: $nom $prenom <$email>\r\n";
-    $entete .= "Reply-To: $prenom <$email>\r\n";
+    $mail = new PHPMailer(true);
 
-    // Envoi de l'e-mail
-    if (mail($destinataire, 'Nouveau message depuis le formulaire de contact', $message, $entete)) {
-        echo 'Votre message a bien été envoyé !';
-    } else {
-        echo 'Erreur lors de l\'envoi de l\'e-mail.';
+    try {
+        // Paramètres du serveur
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'cedrictognifode@gmail.com'; // Remplace par ton adresse email
+        $mail->Password = 'ebkdesfjkgdngfln'; // Remplace par ton mot de passe ou mot de passe d'application
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+
+        // Destinataires
+        $mail->setFrom('cedrictognifode@.com', 'CTAM229');
+        $mail->addAddress('louisefabre94@gmail.com', 'Louise Fabre'); 
+        //$mail->addAddress('mediumdanhinou@gmail.com', 'Medium Danhinou'); 
+        //$mail->addAddress('danhinoumedium@gmail.com', 'Danhinou'); 
+
+        // Contenu de l'email
+        $mail->isHTML(true);
+        $mail->Subject = 'Nouveau message de contact';
+        $mail->Body    = "Nom: $name <br>Prénom: $prenom <br>Email: $email <br>Message: $message";
+
+        $mail->send();
+        echo 'Message envoyé avec succès';
+    } catch (Exception $e) {
+        echo "Le message n'a pas pu être envoyé. Erreur de Mailer: {$mail->ErrorInfo}";
     }
+} else {
+    echo 'Méthode de requête non supportée';
 }
+
 ?>
