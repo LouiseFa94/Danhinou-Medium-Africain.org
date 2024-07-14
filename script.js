@@ -1,11 +1,11 @@
 
-var headerBtn=document.querySelector('.header-section button ');
+var headerBtn=document.querySelector('.header-section button a');
 
 headerBtn.addEventListener('mouseover',()=>{
-    headerBtn.innerHTML="Continuer ?";
+    headerBtn.textContent="Contiuer?";
 })
 headerBtn.addEventListener('mouseout',()=>{
-    headerBtn.innerHTML="En savoir plus";
+    headerBtn.textContent="En savoir plus";
 });
 
 const carousel=document.querySelector(".carousel");

@@ -5296,10 +5296,9 @@ body{
 }
 
 /*-----Ecran 481px et 480px----*/
-@media (min-width:481px) and (max-width:1380px){
+@media (min-width:481px) and (max-width:1366px){
   html{
   background-color:#191919;
-  height:5000px;
   padding-top:20px;
   scroll-behavior:smooth;
   color:#909090;
@@ -5308,7 +5307,6 @@ body{
   margin-left:0px;
   overflow-x: hidden;
 }
-  
 /*video section styles*/
 .header-section {
   display:flex;
@@ -5316,73 +5314,68 @@ body{
   justify-content:center;
   align-items:center; 
   flex-shrink:0;
-  gap:20px;
+  gap:30px;
   color:#e7e7e7;
-  margin-top:0px;
-  height:280px;
-  width:650px;
+  height:420px;
+  width:70%;
+  margin-top:40px;
 } 
     .header-section video{
-      width:100%;
-      margin-top:400px;
-      opacity:0.5;
+      width:102%;
+      margin-top:200px;
+      opacity:0.7;
       position:absolute;
-      z-index:-100;
+      z-index:-98;
     }
     .init-description{
-      margin-inline:4%;
       text-align: center;
       font-size:24px;
       font-family:roboto;
       text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
       color:#ffffff;
-      z-index:-99;
     }
-    .header-section .typewriter{
-      margin-inline:20px;
-      margin-top: 20%;
+    .header-section p[class='typewriter']{
       color:#fdba87;
-      font-size:45px;
+      font-size:75px;
       font-weight:bolder;
     }
-    .header-section button{
+    .header-section #header-btn{
       color:#060607;
       background-color:#e7e7e7;
       border-radius:15px;
       border:2px solid #e7e7e7;
       width:150px;
-      padding:8px;
+      padding:10px 12px;
       font-size:16px;
       cursor:pointer;
-      z-index: 1;
+      outline:none;
     }
-    .header-section button:hover{
+    .header-section #header-btn:hover{
       scale:0.85;
       background-color:#f3f3f3;
       color: #363636;
       transition: all 0.55s;
     }
-    .header-section button:active{
+    .header-section #header-btn:active{
       scale:1.2;
       transition:scale 0.55s;
     }
       .section1{
         background-color:rgb(248 248 248);
         color:#060607;
-        width:90%;
+        width:1185px;
         font-weight:400;
-        padding:6% 4%;
-        margin-left:12px;
-        margin-top:20px;
+        padding:45px;
+        margin-top:-20px;
       }
       .section1 h1{
-        font-size:120%;
+        font-size:45px;
         font-weight:bold;
-        margin-bottom:2%;
+        margin-bottom:10px;
       }
       .section1 p{
-        margin-bottom:3%;
-        font-size:100%;
+        margin-bottom:10px;
+        font-size:24px;
       }
       /*La section2 est relative aux services rendus*/
       .section2{
@@ -5397,14 +5390,16 @@ body{
      
   /*Info de Nos services*/
       .beginner-client{
-        font-family:Lucida Grande;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:40px;
         width:100%;
         padding:20px;
-        margin-left:-25px;
+        margin-left:8px;
       }
       .beginner-client h1{
         text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-        font-size:45px;
         font-weight:700;
         color:gold;
       }
@@ -5417,36 +5412,35 @@ body{
   /*Section des services*/
       .services-opt{
         display:flex;
-        gap:1%;
+        gap:15px;
         flex-wrap: wrap;
-        margin-left:1.15%;
+        justify-content:center;
       }
       .services{
-        background-color:#454545;
+        background-color:#4e4e4e;
         min-width:100px;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-        border-radius:5px;
-        padding:8px;
+        border-radius:2px;
+        padding:20px;
         display:grid;
         grid-template-rows:30px 90px;
         row-gap:4px;
         cursor: pointer;
-        width:200px;
-        height:150px;
-        margin-bottom:1%;
+        width:350px;
+        height:140px;
       }
       .services:hover{
         scale:1.04;
         z-index:2;
-        box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
-        background-color:#585858;
+        box-shadow:0px 1px 4px rgb(0 0 0 / 90%);
+        background-color:#146677;
         color:#e7e7e7;
         transition: all 0.5s;
       }
       .services-to-update{
         background-color:rgb(16, 173, 212);
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-        border-radius:5px;
+        border-radius:2px;
         padding:12px;
         display:flex;
         flex-direction:column;
@@ -5455,8 +5449,8 @@ body{
         margin-right:0px;
         cursor: pointer;
         gap:2px;
-        height:142px;
-        width:191px
+        height:155px;
+        width:370px;
       }
       .services-to-update img{
         height:50px;
@@ -5464,45 +5458,47 @@ body{
         cursor: pointer;
       }
       .services-to-update:hover{
-        scale:1.01;
+        scale:1.04;
         z-index:2;
         transition: all 0.55s;
       }
       .services p{
-        font-size:18px;
+        font-size:24px;
         font-family:Calibri;
+        margin-top:10px;
       }
       h1{
-        font-size:20px;
+        font-size:65px;
         font-family:Calibri;
       }
     
       h3{
-        font-size:14px;
-        padding-block:10px;
+        font-size:35px;
+        padding-bottom:28px;
       }
       /*La section3 est codé pour gérer les FAQ*/  
       .section3{
         background-color: #212121;
         display:flex;
         text-align: center;
-        flex-direction:column;
         justify-content:center;
+        gap: 15px;
         align-items:center;
         padding-bottom:15px;
         width:100%;
-        margin-left:6px;
       }
       .header1{
         font-family:Calibri;
-        font-size:24px;
+        visibility:hidden;
+        width:8px;
+        font-size:30px;
         margin-block:15px;
         color:rgb(93 233 87);
       }
       .subtitle-services{
         display:flex;
-        color: #ffffff;
-        font-size:24px;
+        color: #2bb6d7;
+        font-size:28px;
         margin-bottom:12px;
       }
       .faq{
@@ -5512,22 +5508,22 @@ body{
         align-items:center;
         box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
         background-color:#444444;
-        width:92%;
-        margin-bottom:5px;
+        margin-block:80px;
         padding:10px;
-        height:180px;
+        height:290px;
+        width: 220px;
         border-radius:5px;
         cursor: pointer;
       }
       .faq:hover{
-        background-color: #0cbad1a9;
+        background-color: #021113f6;
         border-radius: 0%;
-        scale:1.01;
+        scale:1.2;
         transition:all 0.55s;
       }
 
       .faq p+p{
-        font-size:17px;
+        font-size:18px;
         font-family:Lucida Grande;
         margin-left:14px;
         color:rgb(216, 216, 216);
@@ -5540,12 +5536,13 @@ body{
     flex-direction: row;
     justify-content:center;
     text-align:center;
-    width:375px;
-    margin-left:60px;
+    padding-block:20px;
+    width:800px;
+    margin-inline:auto;
     min-height:100px;
   }
   .section4 p{
-    font-size:17px;
+    font-size:32px;
     color: #fdba87;
   }
   /*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
@@ -5556,16 +5553,15 @@ body{
     justify-content:center;
     background-color:rgb(223 183 0);
     box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-    width:90%;
-    height:160px;
+    width:50%;
     border-radius:8px;
-    padding-inline:5px;
-    padding-block:7px;
-    margin-left:5.245%;
+    padding-inline:50px;
+    padding-block:50px;
+    margin-inline:auto;
   }
   
   .section5 .p1{
-    font-size:20px;
+    font-size:45px;
     color:rgb(0 0 0);
     margin-inline:5px;
     text-align:center;
@@ -5573,19 +5569,19 @@ body{
   }
   .section5 .p2{
     color:black;
-    margin-top:5px;
-    font-size:15px;
+    margin-top:35px;
+    font-size:24px;
     font-weight:200;
     font-family:Roboto;
     text-align: center;
   }
   .section5 button{
     background-color:rgb(0, 0, 0);
-    margin-top:15px;
-    padding:15px;
+    margin-top:25px;
+    padding:25px;
     cursor: pointer;
     border-radius:30px;
-    font-size:12px;
+    font-size:18px;
     font-weight:200;
     color:#fff;
     border:none;
@@ -5602,22 +5598,22 @@ body{
     transition: scale 0.35s;
   }
   /*La section6 pour l'image de background définissant les traditions du vodoun */
-  .section6{
-    background-color:#315a28;
-    color:#ffffff;
-    width:470px;
+  .section6{                    
+    background-color:#585858;
+    color:#060607;
     display:flex;
     align-items:center;
     justify-content:space-around;
     margin-top: 15px;
-    padding-bottom:9px;
-    padding-right:1px;
-    margin-left:15px;
+    padding-bottom:10px;
+    margin-left:6px;
+    width:100%;
+    height:380px;
   }
   .section6 .info{
     font-family:Calibri;
-    font-size:16px;
-    width:140px;
+    font-size:38px;
+    width:19%;
   }
   /**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
    .image-field{
@@ -5631,8 +5627,8 @@ body{
   }
   .image-field,
   .image-field::after{
-    width:210px;
-    height:170px;
+    width:510px;
+    height:100%;
     z-index: 0;
   }
   .image-field ul{
@@ -5718,7 +5714,7 @@ body{
   }
   .section6 .image-field img{
     height:100%;
-    width:114%;
+    width:120%;
     cursor:pointer;
   }
   /*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
@@ -5743,8 +5739,8 @@ body{
     justify-content:center;
     align-items:center;
     margin-left:14px;
-    width:100%;
-    height:240px;
+    width:240px;
+    height:380px;
     color:#ffffff;
   }
   
@@ -5754,8 +5750,8 @@ body{
   }
   
   .picture-master img{
-    width:400px;
-    height:200px;
+    width:100%;
+    height:100%;
     object-fit:cover;
     object-position:top;
     border-radius:1px;
@@ -5767,7 +5763,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    max-width:480px;
+    max-width:1360px;
     width:100%;
     position:relative;
     padding-left:7px;
@@ -5786,6 +5782,7 @@ body{
     box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
                0px -1px 4px rgba(77, 77, 77, 0.3);
     z-index: 1;
+    outline:none;
   }
   .wrapper img{
     width:100%;
@@ -5796,18 +5793,18 @@ body{
     left:22px; 
   }
   .wrapper #btn2{
-    right:10px;
+    right:22px;
   }
   .wrapper img{
     width:100%;
     height:100%;
-    
+    border-radius:50%;
   }
   .wrapper .carousel{
     display:flex;
     flex-direction:row;
     align-items:center;
-    gap:15px;
+    gap:25px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth; 
@@ -5838,8 +5835,8 @@ body{
     justify-content:center;
   }
   .card .img img {
-    width:150px;
-    height:260px;
+    width:240px;
+    height:380px;
     object-fit:cover;
     border-radius:5px;
   }
@@ -5847,7 +5844,8 @@ body{
   .section-chroniques {
     color:#ffffff;
     font-size:20px;
-    width:100%;
+    display:flex;
+    flex-direction:column;
   }
   .title p{
     margin-block:25px;
@@ -5860,7 +5858,6 @@ body{
   
   .chroniques-layout{
     display:flex;
-    flex-direction:column;
     align-items:center;
     justify-content:center;
     padding-bottom:40px;
@@ -5876,14 +5873,14 @@ body{
     margin-left:2%;
   }
   .picture-chroniques{
-    width:95%;
-    height:200px;
+    width:420px;
+    height:320px;
   }
   .chroniques-description{
     display:flex;
     flex-direction:column;
     justify-content:left;
-    width:100%;
+    width:75%;
     line-height:1.3;
     text-align: center;
   }
@@ -5900,7 +5897,7 @@ body{
     }
   
   .picture-chroniques img{
-    width:100%;
+    width:96%;
     height:100%;
     object-fit:cover;
     cursor: pointer;
@@ -5909,38 +5906,42 @@ body{
   /*Les témoignages*/
   .testimonials {
     display: flex;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items: center;
+    margin:auto;
     padding-left:12px;
     padding-top:15px;
     gap:2%;
+    width:520px;
+    height:380px;
 }
 
 .testimonial {
-    flex: 1;
+    display:flex;
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #f9f9f9;
-    height: 240px;
+  height:100%;
 }
 
 .testimonial img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .testimonial p {
-    font-size: 16px;
+    font-size:22px;
     line-height: 1.4;
     color: black;
 }
 
 .testimonial span {
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     color: rgb(133, 133, 133);
 }
@@ -5949,8 +5950,7 @@ body{
   .stats-ctn{
     display: flex;
     align-items: center;
-    justify-content:center;
-    gap:14px;
+    justify-content:space-evenly;
     text-align: center;
     margin-block: 40px;
     width:100%;
@@ -5963,780 +5963,12 @@ body{
     }
     .stat span:first-child {
       color: rgb(98 110 241);
-      font-size: 28px;
+      font-size:45px;
       font-weight: 700;
     }
     .stat span:last-child {
-      font-size: 16px;
+      font-size: 28px;
       font-weight: 400;
       color : #ffffff ;
     }
-/*------Pour des écrans smartphone--soit--481px---au---plus-----------
-@media (min-width:481px) and (max-width:1309px){
- 
-
-  html{
-    background-color:#191919;
-    height:5000px;
-    padding-top:30px;
-    scroll-behavior:smooth;
-    color:#909090;
-    font-family:Calibri;
-    font-size:14px;
-    margin-left:30px;
-    overflow-x: hidden;
-  }
-
-  .header-section {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-  gap:40px;
-  width:100%;
-  color:#e7e7e7;
-} 
-    .header-section video{
-      height:auto;
-      
-      opacity:0.5;
-      position:absolute;
-      z-index:-100;
     }
-    .init-description{
-      margin-inline:8px;
-      font-size:18px;
-      font-family:roboto;
-      text-shadow:0px 2px 1px rgba(77, 77, 77, 0.438);
-      color:#ffffff;
-      z-index:-99;
-    }
-    .header-section .typewriter{
-      margin-inline:15px;
-      font-size:70px;
-      color:#fdba87;
-      font-weight:bolder;
-    }
-    .header-section button{
-      color:#060607;
-      background-color:#e7e7e7;
-      border-radius:30px;
-      border:2px solid #e7e7e7;
-      width:150px;
-      padding:15px;
-      font-size:18px;
-      cursor:pointer;
-    }
-    .header-section button:hover{
-      scale:0.85;
-      background-color:#f3f3f3;
-      color: #363636;
-      transition: all 0.55s;
-    }
-    .header-section button:active{
-      scale:1.2;
-      transition:scale 0.55s;
-    }
-  /*Ici la section1 est liée aux textes de "Notre Histoire...*/
-  .fix-collapse{
-    padding-inline:10px;
-  } 
-    .section1{
-      background-color:#d4d4d4;
-      color:#060607;
-      width:86%;
-      font-weight:400;
-      padding:50px;
-      margin-top:50px;
-      margin-inline:2.5%;
-    }
-    .section1 h1{
-      font-size:57px;
-      font-weight:bold;
-      margin-bottom:15px;
-    }
-    .section1 p{
-      margin-bottom:10px;
-      font-size:22px;
-    }
-    /*La section2 est relative aux services rendus*/
-    .section2{
-      background-color:#191919;
-      color:#b1b1b1;
-      width:100%;
-      display:flex;
-      flex-direction:row;
-      font-weight:200;
-      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-    }
-/*Info de Nos services*/
-    .beginner-client{
-      font-family:Lucida Grande;
-      width:50%;
-      padding-block:45px;
-      padding-inline:10px;
-      margin-right:10px;
-    }
-    .beginner-client h1{
-      text-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-      font-size:85px;
-      font-weight:700;
-    }
-    .beginner-client p{
-      font-size:22px;
-      padding-top:10px;
-      margin-top:15px;
-      color: #9e9e9e;
-    }
-/*Section des services*/
-    .services-opt{
-      width:50%;
-      display:grid;
-      grid-template-columns:250px 250px 250px;
-      column-gap:35px;
-      grid-template-rows:280px 280px ;
-      row-gap:35px;
-      padding:45px;
-    }
-    .services{
-      background-color:#454545;
-      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-      border-radius:5px;
-      padding:12px;
-      display:grid;
-      grid-template-rows:50px 136px;
-      cursor: pointer;
-    }
-    .services:hover{
-      scale:1.2;
-      z-index:2;
-      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.8);
-      background-color:#585858;
-      color:#e7e7e7;
-      transition: all 0.5s;
-    }
-    .services-to-update{
-      background-color:#ffffff;
-      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-      border-radius:5px;
-      padding:12px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      cursor: pointer;
-      gap:60px;
-      height:255px;
-    }
-    .services-to-update img{
-      height:80px;
-      width:80px;
-      cursor: pointer;
-    }
-    .services-to-update:hover{
-      scale:1.2;
-      z-index:2;
-      transition: all 0.55s;
-    }
-    .services p{
-      font-size:22px;
-      font-family:Calibri;
-    }
-    h1{
-      font-size:80px;
-      font-family:Calibri;
-    }
-  
-    h3{
-      font-size:30px;
-      padding-block:10px;
-    }
-    /*La section3 est codé pour gérer les FAQ*/  
-    .section3{
-      background-color: #212121;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      padding-bottom:25px;
-      width:100%;
-    }
-    .header1{
-      font-family:Calibri;
-      font-size:70px;
-      margin-block:30px;
-      color:rgb(255, 255, 255);
-    }
-    .subtitle-services{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color: #ffffff;
-      font-size:28px;
-      margin-bottom:12px;
-    }
-    .faq{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-      background-color:#444444;
-      width:460px;
-      margin-bottom:35px;
-      padding:15px;
-      height:230px;
-      border-radius:15px;
-      cursor: pointer;
-    }
-    .faq:hover{
-      background-color: #d32a00a9;
-      scale:1.1;
-      transition:all 0.55s;
-    }
-
-    .faq p+p{
-      font-size:18px;
-      font-family:Lucida Grande;
-      margin-left:14px;
-      color:rgb(216, 216, 216);
-    }
-/*Codage de la section4 commence juste après*/
-.section4{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  height: 344px;
-  width:auto;
-}
-.section4 p{
-  font-size:50px;
-  margin-inline:50px;
-  margin-block:50px;
-  color: rgb(255, 255, 255);
-}
-/*Codage des éléments de la section5 qui sont relatifs aux contact du Maitre vodoun par les utilisateurs*/
-.section5{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  background-color:rgb(196, 196, 196);
-  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-  border-radius:2px;
-  padding-inline:20px;
-  padding-block:70px;
-  margin-inline:0;
-  margin-bottom:25px;
-}
-
-.section5 .p1{
-  font-size:65px;
-  color:black;
-  margin-inline:5%;
-  text-align:center;
-  font-weight:500;
-}
-.section5 .p2{
-  color:black;
-  margin-top:35px;
-  font-size:18px;
-  font-weight:200;
-  font-family:Roboto;
-}
-.section5 button{
-  background-color:rgb(0, 0, 0);
-  margin-top:35px;
-  padding:18px;
-  cursor: pointer;
-  border-radius:30px;
-  font-size:18px;
-  font-weight:200;
-  color:#fff;
-  border:none;
-}
-.section5 button:hover{
-  background-color:rgb(23, 24, 24);
-  scale:1.1;
-  transition: scale 0.35s;
-  font-weight:bold;
-}
-.section5 button:active{
-  background-color:rgb(16, 173, 212);
-  scale: 0.9;
-  transition: scale 0.35s;
-}
-/*La section6 pour l'image de background définissant les traditions du vodoun */
-.section6{
-  background-color:#242424;
-  color:#ffffff;
-  width:100%;
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-}
-  .section6 .info{
-  font-family:Calibri;
-  font-size:22px;
-  width:30%;
-  padding:45px 22.5px;
-}
-/**Les codes présents ici permettent de pouvoir faire déafiler des images dans le même conteneur.*/
- .image-field{
-  padding:30px;
-  opacity:0.84;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.image-field,
-.image-field::after{
-  background-color: #000000;
-  width:820px;
-  height:480px;
-  z-index: 0;
-}
-.image-field ul{
-list-style: none;
-}
-.image-field li span {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  backface-visibility: hidden;
-  opacity:0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: animate 36s linear infinite 0s;
-}
-.image-field li:nth-child(1) span{
-  animation-delay: 0s;
-}
-.image-field li:nth-child(2) span{
-  animation-delay: 4s;
-}
-.image-field li:nth-child(3) span{
-  animation-delay: 8s;
-}
-.image-field li:nth-child(4) span{
-  animation-delay: 12s;
-}
-.image-field li:nth-child(5) span{
-  animation-delay: 16s;
-}
-.image-field li:nth-child(6) span{
-  animation-delay: 20s;
-}
-.image-field li:nth-child(7) span{
-  animation-delay: 24s;
-}
-.image-field li:nth-child(8) span{
-  animation-delay: 28s;
-}
-.image-field li:nth-child(9) span{
-  animation-delay: 32s;
-}
-.image-field li:nth-child(10) span{
-  animation-delay: 36s;
-}
-@keyframes animate{
-  0%{
-    opacity: 0;
-  }
-  10%{
-    opacity: 0;
-  }
-  20%{
-    opacity: 0;
-  }
-  30%{
-    opacity: 0;
-  }
-  40%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 1;
-  }
-  60%{
-    opacity: 1;
-  }
-  70%{
-    opacity: 0;
-  }
-  80%{
-    opacity: 0;
-  }
-  90%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-.section6 .image-field img{
-  height:inherit;
-  width:100%;
-  cursor:pointer;
-}
-/*A partir des lignes suivantes, sont les codes de la section consulter les maîtres*/
-.section-master p{
-  text-align:center;
-}
-.master-presta-info{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  gap:45px;
-}
-.picture-master{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width:250px;
-  height:460px;
-  color:#ffffff;
-}
-
-.picture-master h2,
-.picture-master p{
-  margin-top:12px;
-}
-
-.picture-master img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:1px;
-  cursor: pointer;
-  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-}
-/*Scrollable image*/
-.wrapper{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  max-width:1200px;
-  width:100%;
-  position:relative;
-  padding-left:7px;
-  margin-bottom: 25px;
-  
-}
-.wrapper button{
-  border:none;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  background-color:rgba(39, 39, 39, 0.945);
-  cursor:pointer;
-  position: absolute;
-  top:50%;
-  transform:translateY(-50%);
-  box-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
-             0px -1px 4px rgba(77, 77, 77, 0.3);
-  z-index: 1;
-}
-.wrapper img{
-  width:100%;
-  height:100%;
-  
-}
-.wrapper #btn1{
-  left:22px; 
-}
-.wrapper #btn2{
-  right:22px;
-}
-.wrapper .carousel{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  gap:25px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth; 
-}
-.carousel::-webkit-scrollbar{
-  display:none;
-}
-.carousel .no-transition{
-  scroll-behavior:auto;
-}
-.dragging {
-  cursor:grab;
-  scroll-snap-type:none;
-  scroll-behavior: auto;
-}
-.carousel .card{
-  scroll-snap-align:start;
-  list-style:none;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-}
-.card .img{
-  display: flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
-}
-.card .img img {
-  width:320px;
-  height:360px;
-  object-fit:cover;
-  border-radius:5px;
-}
-
-/*je commence par gérer le responsive design grâce aux medias querries*/
-@media screen and (max-width: 900px) {
-  .card .img img{
-    width:250px;
-    height:360px;
-    border-radius:20px;
-    transition: all 0.55s;
-  }  
-}
-
-@media screen and (max-width: 600px) {
-  .card .img img{
-    width:150px;
-    height:260px;
-    border-radius:15px;
-    transition:all 0.55s;
-  }  
-}
-
-/*C'est du code pour controler l"affichage des textes*/
-
-/*@keyframes descriptionAnimate {
-  from {
-      transform: translateX(-1100px);
-  }
-
-  to {
-      transform: translateX(0);
-  }
-}
-
-.typewriter {
-  animation-name: descriptionAnimate;
-  animation-duration: 3s;
-  font-weight: 100;
-}
-
-span {
-  opacity:0;
-  transition: all .5s ease;
-}
-
-span.fade {
-  opacity: 1;
-}
-*/
-
-/*Chroniques section comme Master section*/
-.section-chroniques {
-  color:#ffffff;
-  font-size:20px;
-}
-.title p{
-  margin-block:25px;
-  text-align:center;
-  font-size:40px;
-  font-weight:300;
-  color: #fdba87;
-}
-
-.chroniques-layout{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:space-evenly;
-  padding-bottom:40px;
-  padding-top: 40px;
-}
-
-.chroniques-visual{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-}
-.picture-chroniques{
-  width:350px;
-  height:320px;
-}
-.chroniques-description{
-  display:flex;
-  flex-direction:column;
-  justify-content:left;
-  width:350px;
-  line-height:1.3;
-}
-  .chroniques-description span , .chroniques-description p{
-    color:rgb(133, 133, 133);
-    font-weight:200;
-    margin-block:0;
-    text-align: left;
-  }
-  .chroniques-description h2{
-    font-weight:bolder;
-    font-size:25px;
-    margin-block:0;
-  }
-
-.picture-chroniques img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  cursor: pointer;
-  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.3);
-}
-/*Les témoignages*/
-.testimony{
-  background-color:#191919;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  padding-bottom: 20px;
-}
-.subtitle p{
-color: rgba(255, 255, 255, 0.945);
-font-size:35px;
-margin-block:40px;
-}
-.testimonies-visual{
-  display:grid;
-  grid-template-columns: 460px 460px;
-  column-gap: 100px;
-  grid-template-rows:210px 210px;
-  row-gap: 20px;
-}
-.user-testimony{
-  background-color: #ffffff;
-  border-radius: 4px;
-  color:black;
-  font-size: 16px;
-  display:flex;
-  flex-direction: column;
-  gap:5px;
-  padding:20px;
-}
-.user-picture img{
-  opacity: 1;
-  width: 30px;
-  height: 30px;
-  border-radius: 3px;
-  align-items: center;
-}
-.user-about{
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  margin-bottom: 6px;
-}
-.user-about button{
-  margin-left:auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding-block:5px;
-  padding-inline: 10px;
-  margin-bottom: 6px;
-}
-.user-about button img{
-  width: 15px;
-  height: 15px;
-}
-.user-name{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:left;
-  line-height: 1;
-  margin-left: 10px;
-  margin-bottom: 3px;
-}
-.user-name .name{
-  font-weight: 700;
-}
-.user-name .surname{
-  margin-right:auto;
-}
-.user-name .surname ,
-.publish-date{
-  color: rgb(156, 156, 156);
-  font-size: 14.4px;
-  font-weight: 400;
-}
-.user-publish p{
-  font-weight: 400;
-}
-.user-publish p span{
-  color: rgb(2, 110, 218);
-  font-weight: 500;
-}
-.interactivity{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 130px;
-  margin-top: 5px;
-}
-.interactivity div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.interactivity img{
-  width:15px ;
-  height:15px ;
-}
-.interactivity span{
-  font-size: 14px;
-  font-weight: bold;
-  color: #6e6e6e;
-  margin-inline:2px ;
-  margin-bottom: 2px;
-}
-
-/*Statistiques du Maître Spirituel*/
-.stats-ctn{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  margin-top: 40px;
-}
-  .stat{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-  }
-  .stat span:first-child {
-    color: rgb(172, 0, 252);
-    font-size: 55px;
-    font-weight: 700;
-  }
-  .stat span:last-child {
-    font-size: 25px;
-    font-weight: 400;
-    color : #ffffff ;
-  }
-}
-

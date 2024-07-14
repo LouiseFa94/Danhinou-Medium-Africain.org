@@ -26,7 +26,7 @@
         
       </div>
       <div class="navbar-right-section">
-        <button>Découvrir</button>
+        <button type="button">Découvrir</button>
         <div><li class="menu-icon"></li></div>
       </div>
       <!--Ceci est un menu vertical qui apparait lorsque l'ecran a une largeur inférieure ou égale à 1000px-->
@@ -36,7 +36,7 @@
           <li><a href="#">Contact</a></li>
           <li><a href="index.html">Faq</a></li>
         <div class="menu-vertical-button">
-          <button>Découvrir</button>
+          <button type="button">Découvrir</button>
         </div>
    </div>
    <!--Fin de code html pour le menu vertical-->
@@ -46,15 +46,15 @@
       <div class="titre">
         <p>Contactez-nous</p>
       </div>
-          <form action="traitement.php" method="post" role="form">
+          <form action="traitement.php" method="POST" role="form" >
               <div class="user-identity">
-                  <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom" required>
-                  <input type="text" id="prenom" name="prenom" placeholder="Prénoms" required>
+                  <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom">
+                  <input type="text" id="prenom" name="prenom" placeholder="Prénoms">
               </div>
-              <input type="email" id="email" name="email" maxlength="30"  placeholder="Email" required>
+              <input type="email" name="email" id="email" maxlength="30" placeholder="Email">
       
-              <textarea id="message1" name="message1" rows="4" 
-              maxlength="150" placeholder="Message" required  style="height: 134px; resize:none;"></textarea>
+              <textarea id="message1" name="message" 
+              maxlength="150" placeholder="Message"  style="height: 134px; resize:none;"></textarea>
               <div class="users-consentement">
                 <input type="checkbox" id="checkbox1">
                 <p class="consent-text">J'accepte de recevoir des notifications provenants de DanhinouMedium.</p>
@@ -62,11 +62,11 @@
               <input type="submit" value="Envoyer" id="submit1">
               <!--Cette partie concerne que les codes d'une largeur d'écran portable-->
               <div class="user-identity-p">
-                <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom :" required>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénoms :" required>
-                <input type="email" id="email" name="email" maxlength="30"  placeholder="Email :" required>
-                <textarea id="message2" name="message2" rows="4" 
-                maxlength="150" placeholder="Laissez-nous votre message..." required style="height: 134px; resize:none;"></textarea>
+                <input type="text" id="nom" name="nom"  maxlength="25" placeholder="Nom :">
+                <input type="text" id="prenom" name="prenom" placeholder="Prénoms :">
+                <input type="email" id="email" name="email" maxlength="30"  placeholder="Email :">
+                <textarea id="message2" name="message"
+                maxlength="150" placeholder="Laissez-nous votre message..."  style="height: 134px; resize:none;"></textarea>
               </div>
               <div class="users-consentement">
                 <input type="checkbox" id="checkbox2">
