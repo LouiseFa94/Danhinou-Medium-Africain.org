@@ -441,8 +441,123 @@ margin-top:40px;
 } 
 }
 
-/*---Ecran 1309px +---*/
-@media (min-width:481px) and (max-width:1366px){
+
+/*---Ecran 481px à 540px---*/
+@media (min-width:481px) and (max-width:540px){
+
+  footer{
+    background-color: #353535;
+    color: silver;
+    font-size:12px;
+    font-family: Calibri;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 140px;
+    padding:15px;
+  }
+
+  footer .foot,
+.foot-principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:center;
+}
+footer .foot:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  gap:5px;
+  align-items:center;
+}
+.foot-principal>img{
+  width:140px;
+  height:140px;
+  padding:0;
+}
+
+.foot-principal p{
+margin-top:0px;
+}
+.social-icons{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.social-icons img{
+  width:35px;
+  height:35px ;
+  cursor: pointer;
+}
+
+.social-icons span:first-child img{
+  width:45px;
+  height:45px ;
+  cursor: pointer;
+} 
+}
+
+/*---Ecran 541px à 640px---*/
+@media (min-width:541px) and (max-width:640px){
+
+  footer{
+    background-color: #353535;
+    color: silver;
+    font-size:12px;
+    font-family: Calibri;
+    display:grid;
+    text-align:center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 130px;
+    padding:15px;
+  }
+
+  footer .foot,
+.foot-principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:center;
+}
+footer .foot:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  gap:5px;
+  align-items:center;
+}
+.foot-principal>img{
+  width:140px;
+  height:140px;
+  padding:0;
+}
+
+.foot-principal p{
+margin-top:0px;
+}
+.social-icons{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.social-icons img{
+  width:35px;
+  height:35px ;
+  cursor: pointer;
+}
+
+.social-icons span:first-child img{
+  width:45px;
+  height:45px ;
+  cursor: pointer;
+} 
+}
+/*---Ecran 641px à 1368px---*/
+@media (min-width:641px) and (max-width:1368px){
 
   footer{
     background-color: #353535;

@@ -144,4 +144,4 @@ function nextSlide() {
 }
 
 // Démarrez le carrousel automatiquement
-setInterval(nextSlide, 5000); // Changez l'intervalle selon vos préférences
+setInterval(nextSlide, 12000); // Changez l'intervalle selon vos préférences
