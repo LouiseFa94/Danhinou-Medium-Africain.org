@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Destinataires
         $mail->setFrom('cedrictognifode@.com', 'CTAM229');
         $mail->addAddress('louisefabre94@gmail.com', 'Louise Fabre'); 
-        //$mail->addAddress('mediumdanhinou@gmail.com', 'Medium Danhinou'); 
-        //$mail->addAddress('danhinoumedium@gmail.com', 'Danhinou'); 
+        $mail->addAddress('mediumdanhinou@gmail.com', 'Medium Danhinou'); 
+        $mail->addAddress('danhinoumedium@gmail.com', 'Danhinou'); 
 
         // Contenu de l'email
         $mail->isHTML(true);
